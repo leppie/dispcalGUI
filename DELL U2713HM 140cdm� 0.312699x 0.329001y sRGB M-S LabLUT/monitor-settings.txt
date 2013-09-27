@@ -1,0 +1,12 @@
+Factory settings
+
+Service menu:
+
+R: 219
+G: 210
+B: 215
+Sub-B: 90
+
+User menu:
+
+Preset: Color temp 6500K

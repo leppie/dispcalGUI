@@ -1,0 +1,12 @@
+Factory settings
+
+Service menu:
+
+R: 199
+G: 206
+B: 249
+
+User Menu:
+
+Preset: PC Normal
+Brightness: 52
