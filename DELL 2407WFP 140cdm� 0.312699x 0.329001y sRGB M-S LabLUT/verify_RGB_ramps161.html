@@ -1,0 +1,772 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Profile Verification Report 0.0.0.0 — 2407WFP 140cdm² 0.312699x 0.329001y sRGB M-S LabLUT 912 (R199 G206 B249 BR52) — 2013-09-27 23:29:28</title>
+	<style type="text/css">
+		h1 span {
+	display: inline-block;
+	height: 9px;
+	font-size: 1px;
+	margin: 3px 6px 0 0;
+	width: 9px;
+}
+h1 span.r {
+	background: #f00000;
+}
+h1 span.g {
+	background: #00f000;
+}
+h1 span.b {
+	background: #0000f0;
+	margin-right: 11px;
+}
+h3 {
+	font-size: 1.5em;
+	font-weight: normal;
+	margin-bottom: .5em;
+}
+table {
+	border: none;
+	border-spacing: 0;
+	width: 100%;
+}
+td, th {
+	border: none;
+	border-bottom: 1px solid silver;
+	padding: .125em .25em .125em 0;
+	text-align: center;
+	white-space: nowrap;
+}
+table.info td, table.info th, td.first-column, th.first-column {
+	text-align: left;
+}
+table.info th {
+	padding-right: 1em;
+}
+td.bar {
+	padding: 0;
+	text-align: left;
+}
+td.patch {
+	border-left: none;
+	border-right: none;
+	padding: 0;
+	vertical-align: top;
+	width: 1.75em;
+}
+.overview td.patch {
+	border-bottom: none;
+}
+.overview tr.last-row td.patch {
+	border-bottom: 1px solid silver;
+}
+div.patch {
+	padding: .125em .25em .125em 0;
+	width: 1.75em;
+}
+td.patch.sample_id,
+div.patch.sample_id {
+	width: auto;
+}
+.ok {
+	color: #339900;
+}
+.warn {
+	color: #FF3300;
+	font-weight: bold;
+}
+.ko {
+	color: red;
+	font-weight: bold;
+}
+.hidden {
+	color: white;
+	visibility: hidden;
+}
+td.ok, td.ko {
+	line-height: 1em;
+}
+.statonly,
+tr.statonly td  {
+	color: gray;
+}
+tr.verbose {
+	display: none;
+}
+	</style>
+	<style type="text/css" media="screen,projection,tv">
+		* {
+	font-family: Verdana, Arial, Helvetica, "Liberation Sans", FreeSans, sans-serif;
+}
+a {
+	outline: none;
+	text-decoration: none;
+}
+a:link,
+a:active {
+	color: #006699;
+}
+a:visited {
+	color: #666666;
+}
+a:hover,
+a:visited:hover {
+	border-bottom: 1px dotted #0099CC;
+	color: #0099CC;
+	text-decoration: none;
+}
+a, button, button:active, button:hover {
+	outline: none;
+}
+html {
+	background: #e8e8e8;
+	border-top: 4px solid #666666;
+}
+body {
+	background: white;
+	border-radius: 14px;
+	-moz-border-radius: 14px;
+	-webkit-border-radius: 14px;
+	font-size: 11px;
+	margin: 17px auto;
+	padding: 15px 20px;
+	width: 900px;
+}
+button {
+	background: #cccccc;
+	border: 1px solid #999999;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	color: #000;
+	font: normal 1em Verdana, Arial, Helvetica, "Liberation Sans", FreeSans, sans-serif;
+	padding: 2px 6px;
+}
+button:active,
+button:active:hover,
+button:active:focus {
+	background: #cccccc;
+	border-color: #333333;
+}
+button.disabled {
+	background: #dddddd;
+	border-color: #999;
+	color: #999;
+}
+button:hover, 
+button.hover {
+	background: #333333;
+	border-color: #333333;
+	color: #fff;
+}
+button.disabled:hover, 
+button.disabled.hover,
+button.disabled:focus,
+button.disabled.focus {
+	background: #dddddd;
+	border-color: #999;
+	color: #999;
+}
+h2 {
+	color: #333333;
+	font-family: Arial, Helvetica, "Liberation Sans", FreeSans, sans-serif;
+	font-size: 20px;
+	font-weight: normal;
+	margin-bottom: 9px;
+}
+h3 {
+	cursor: pointer;
+	font-family: Arial, Helvetica, "Liberation Sans", FreeSans, sans-serif;
+}
+p {
+	line-height: 18px;
+}
+fieldset, div.fieldset {
+	border-style: solid;
+	border-width: 4px;
+	border-top: none;
+	border-bottom-left-radius: 6px;
+	-moz-border-radius-bottomleft: 6px;
+	-webkit-border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	-moz-border-radius-bottomright: 6px;
+	-webkit-border-bottom-right-radius: 6px;
+	padding: 10px;
+}
+h2.legend {
+	border-top-left-radius: 6px;
+	-moz-border-radius-topleft: 6px;
+	-webkit-border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	-moz-border-radius-topright: 6px;
+	-webkit-border-top-right-radius: 6px;
+	display: block;
+	font-family: Arial, Helvetica, "Liberation Sans", FreeSans, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	line-height: 12px;
+	margin: 10px 0 0;
+	padding: 8px 14px 7px;
+	text-transform: uppercase;
+}
+form,
+div.process {
+	clear: both;
+}
+#F_out {
+	margin-bottom: 20px;
+}
+form {
+	margin: 0;
+}
+h1 {
+	border: none;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	font: lighter 12px Arial, Helvetica, "Liberation Sans", FreeSans, sans-serif;
+	margin: 0;
+	padding: 12px 15px;
+	z-index: 1;
+}
+p.error {
+	color: red;
+	font-weight: bold;
+	margin: 20px 14px 10px 14px;
+}
+select,
+select:disabled:hover,
+select:disabled:focus {
+	background: #f9f9f9;
+	border: 1px solid #999999;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	font: normal 1em Verdana, Arial, Helvetica, "Liberation Sans", FreeSans, sans-serif;
+	margin-right: 5px;
+	padding: 1px;
+}
+select:hover, 
+select:focus {
+	background: white;
+	border-color: #333333;
+}
+#report,
+#reporttitle {
+	/* display: none; oddly cuts off part of the summary in IE6 */
+	visibility: hidden;
+}
+.disabled {
+	color: #999;
+}
+.options {
+	margin: 6px 0 10px;
+	width: 430px;
+}
+.functions {
+	margin: 6px 0 10px;
+	text-align: right;
+}
+.functions button {
+	width: 17em;
+}
+* > .functions {
+	float: right;
+	width: 430px;
+}
+input[type=checkbox] {
+	vertical-align: middle;
+}
+label[for=FF_gray_balance_cal_only] {
+	display: none;
+}
+table {
+	width: 872px;
+}
+td, th {
+	font-size: 11px;
+}
+		﻿fieldset, div.fieldset {
+	background: #ececec;
+	border-color: #202020;
+}
+legend, h2.legend {
+	background: #202020;
+	border-color: #202020;
+	color: #b9b9b9;
+}
+h1 {
+	background: #202020;
+	border-color: #666666;
+	color: #b9b9b9;
+}
+	</style>
+	<style type="text/css" media="print">
+		#F_data, #reporttitle, .options, .functions {
+	display: none;
+}
+body {
+	background: white;
+	font: normal .75em Helvetica, Arial, "Liberation Sans", FreeSans, sans-serif;
+	padding: 1em;
+}
+h1 {
+	background: #333333;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	color: white;
+	display: block;
+	font-size: 1em;
+	font-weight: normal;
+	margin: 0 auto .5em;
+	padding: .5em .9em;
+	width: 19em;
+}
+h2 {
+	font-weight: lighter;
+	font-size: 2em;
+}
+p {
+	line-height: 1.5em;
+}
+	</style>
+	<script type="text/javascript" >/*<![CDATA[*/
+eval(function(p,a,c,k,e,d){e=function(c){return(c<a?"":e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp("\\b"+e(c)+"\\b","g"),k[c])}}return p}('q(!3N.V.1f){3N.V.1f=J(o,3W){o=o?89(o):3X;o.3U=k;M(B i=0,3V=[];i<3W.D;i++)3V[i]="3W["+i+"]";B 1m=88("o.3U("+3V.27(",")+");");o.3U=1D;I 1m}};q(!O.V.1Z)O.V.1Z=J(){B n=k.D>>>0,U;q(n){U=k[--n];1M k[n]};k.D=n;I U};q(!O.1Z)O.1Z=J(m){I O.V.1Z.1f(m)};q(!O.V.1Y)O.V.1Y=J(){B n=k.D>>>0,U=k[0];M(B i=1;i<n;i++)k[i-1]=k[i];1M k[n];k.D=n-1>>>0;I U};q(!O.1Y)O.1Y=J(m){I O.V.1Y.1f(m)};q(!O.V.3Q)O.V.3Q=J(){B n=k.D>>>0;M(B i=(n-1)>>>0;i>=0;i--)k[i+N.D]=k[i];M(B i=N.D-1;i>=0;i--){k[i]=N[i];n=n+1>>>0};k.D=n;I n};q(!O.V.1p||[].1p(0)==0)O.V.1p=J(){B n=k.D>>>0;M(B i=0;i<N.D;i++){k[n]=N[i];n=n+1>>>0};k.D=n;I n};q(!O.V.3b||[0].3b(0,1)===0)O.V.3b=J(1g,21){q(N.D==0)I 1g;q(P 1g!="1y")1g=0;q(1g<0)1g=h.2x(0,k.D+1g);q(1g>k.D){q(N.D>2)1g=k.D;1l I[]};q(N.D<2)21=k.D-1g;21=(P 21=="1y")?h.2x(0,21):0;B 4y=k.1O(1g,1g+21);B 3T=k.1O(1g+21);k.D=1g;M(B i=2;i<N.D;i++)k[k.D]=N[i];M(B i=0;i<3T.D;i++)k[k.D]=3T[i];I 4y};q(!1q.V.4x){1q.V.4x=J(2j){q(!2j)2j=0;B i,n=h.u(10,2j),n=(h.2F(k*n)/n)+"";q(2j&&(i=n.1P("."))<0){i=n.D;n+="."};4h(n.87(i).D<2j+1)n+="0";I n}};q(!O.V.1P){O.V.1P=J(4w){B 3S=k.D;B 1v=1q(N[1])||0;1v=(1v<0)?h.86(1v):h.85(1v);q(1v<0)1v+=3S;M(;1v<3S;1v++){q(k[1v]===4w)I 1v};I-1}};f=J(){I 3z f.f(N)};f.1d={1t:{4q:0,84:1,4t:2,4s:3,4u:4,3O:5,4r:6,3a:7}};f.2A=J(m,1F){f.f.V.2A(m,1F)};f.f=J(){B 1u;q(!f.4v){M(B K 1E f.Y)q(P f.Y[K]=="J"&&!f.Y[K].X)f.Y[K].X=[f.Y.3F];M(B K 1E f.3R)q(P f.3R[K]=="J")f.3R[K].X=[J(2D){I 2D.1z==2W}];M(B K 1E f.1j)q(P f.1j[K]=="J")f.1j[K].X=[J(2D){I P 2D=="1j"||2D.1z==2y}];M(B K 1E f)f.2A(f[K],f[K]);B 3P=["83","82","81","1P","27","7Z","7Y","1O","7X","1Z","1p","7W","1Y","7V","3b","3Q"];M(B i=0;i<3P.D;i++){(J(2C){f.f.V[2C]=J(){B 1m=O.V[2C].1f(k,N);I P 1m=="m"?f(1m):(1m!=1D||2C=="1Z"||2C=="1Y"?1m:k)}})(3P[i])};f.4v=2i};q(k.D==1D)k.D=0;M(B i=0;i<N[0].D;i++){B m=N[0][i];1T(P m){Q"J":1u=f.1d.1t.4u;1b;Q"1y":1u=f.1d.1t.3O;1b;Q"1j":1u=f.1d.1t.3a;1b;2m:q(!m)7U;1T(m.1z){Q 7T:1u=f.1d.1t.4t;1b;Q 7S:1u=f.1d.1t.4s;1b;Q 1q:1u=f.1d.1t.3O;1b;Q 2W:1u=f.1d.1t.4r;1b;Q 2y:1u=f.1d.1t.3a;1b;2m:1u=f.1d.1t.4q}};1T(1u){Q f.1d.1t.3a:B 2B=m.3e(":");q(2B.D>1)1T(2B[0]){Q"7R":Q"7Q":Q"7P":m=f.Y.4p(2B.1O(1).27(":"));1b;Q"7O":m=f.Y.7N(2B.1O(1).27(":"));1b}1l q(/<[^<]*>/.2X(m))m=f.Y.4p(m);2m:q(m.1z==O)O.V.1p.1f(k,m);1l q(P m=="m"&&P m.D=="1y"&&m.1z!=2y&&m.1z!=3N)O.V.1p.1f(k,O.V.1O.1f(m));1l k[k.D++]=m}}};f.f.V={3L:J(m){B 1m=f(k);f.f.1f(1m,[m]);I 1m},2A:J(m,1F){M(B K 1E m)q(P m[K]=="J"&&K!="$"&&K!="2A"&&K!="33"&&K!="7M"){q(!k[K]){k[K]=J(){q(k.D){B 1s=N.7L.1s;M(B i=0;i<k.D;i++){M(B n=0;n<1s.D;n++){B 1F=1s[n].1F||k[i],3M=1s[n].1F?[k[i]].3L(O.V.1O.1f(N)):N;q(1s[n].39.1f(1s[n],3M)){k[i]=1s[n].1f(1F,3M)}}}};I k};k[K].1s=[]};q(!m[K].39){q(m[K].X)m[K].39=J(){M(B i=0;i<k.X.D;i++){q(!(P k.X[i]=="1j"?P N[i]==k.X[i]:(P k.X[i]=="J"?k.X[i](N[i]):N[i]==k.X[i]))){I 7K}};I 2i};1l m[K].39=J(){I 2i}};m[K].1F=1F;q(k[K].1s.1P(m[K])<0)k[K].1s.1p(m[K])}},33:J(){I O.V.1O.1f(k).33()}};f.1k={$:J(m){B 1k=[],n;q(m.D!=1D)M(B i=0;i<m.D;i++)1k[i]=m[i];1l M(B i 1E m)q(!3d(n=7J(i))&&n==i)1k[n]=m[i];I 1k}};f.1k.$.X=[1D];f.1k.1U=J(a){B r=[];M(B i=0;i<a.D;i++){q(a[i].1z==O)r=r.3L(f.1k.1U(a[i]));1l r.1p(a[i])};I r};f.1k.1U.X=[O];f.Y={};f.Y.4o={"1":"7I","2":"7H","3":"7G","4":"7F","5":"7E","6":"7D","7":"7C","8":"7B","9":"7A","10":"7z","11":"7y","12":"7x"};f.Y.3F=J(m){I!!(m&&f.Y.4o[m.7w]&&m.7v)};f.1j={};f.1j.3I=J(4n){I 4n.1V(/(^\\s+|\\s+$)/g,"")};f.1j.3I.X=[2y];f.2Z={$:J(1n){1n=(1n||7u.7t).4a();B i,j,1X,1o,1V=[[/(\\d+\\.)(\\d+)\\.(\\d+)(\\.(\\d+))?/g,"$1$2$3$5"],[/3K/g,";3K;3K"],[/3J/,";3J;3J"],[/7s ((p)7r )?7q 7p/g,"7o$7n"],[/7m/g,"38"],[/38 (\\w+)/g,"38;38 $1"]];M(i=0;i<1V.D;i++)1n=1n.1V(1V[i][0],1V[i][1]);1n=1n.3e(/[\\(\\)\\[\\]\\{\\}\\,;]/);M(i 1E k){q(P k[i]!="m"&&P k[i]!="J")1M k[i]};M(i=0;i<1n.D;i++){1X=1n[i].1X(/[a-z\\.\\-37]+(\\s+[a-z\\.\\-37]+)*\\4m?\\d+(\\.\\d+)*/g);q(1X){M(j=0;j<1X.D;j++){1o=1X[j].1X(/([a-z\\.\\-37]+(\\s[a-z\\.\\-37]+)*)\\4m?(\\d+(\\.\\d+)*)/);q(!k[1o[1]]||(34(1o[3])==1o[3]&&k[1o[1]]<34(1o[3])))k[1o[1]]=34(1o[3])==1o[3]?34(1o[3]):1o[3]}}1l{1n[i]=f.1j.3I(1n[i]);q(1n[i])k[1n[i]]=2i}};q(k.4k&&!k.4l)k.4l=2i;q(k.3H===2i)1M k.3H;q(!k.7l&&k.2z){k.7k=k.2z;1M k.2z};q(k.7j||k.3H||k.4k){q(k.2z)1M k.2z;q(k.4j)1M k.4j};I k}};f.2Z.33=J(){B 3G=[];M(i 1E k){q(P k[i]!="m"&&P k[i]!="J")3G.1p((/\\s/.2X(i)?"\'":"")+i+(/\\s/.2X(i)?"\'":"")+":"+(P k[i]=="1j"?\'"\':"")+k[i]+(P k[i]=="1j"?\'"\':""))};I 3G.27(", ")};f.2Z.$.X=[2y];f.2Z.$();f.3C={};f.1d.3E={"7i":"7h","M":"7g",7f:"7e",7d:"7c"};f.3D=J(m,1N,U){1T(1N){Q"2Y":Q"U":I N.D==2?f.2h(m,1N):f.2h(m,1N,U);2m:q(f.1d.3E[1N])I f.2h.1f(f,N);1l{q(N.D==2)I m.7b(1N);q(U==1D)m.7a(1N);1l m.79(1N,U)}};I m};f.2h=J(m,K,U){1T(K){Q"2Y":q(N.D==2)I m.2Y.4i;m.2Y.4i=U||"";1b};q(f.Y.3F(m))K=f.1d.3E[K]||K;q(N.D==2)I m[K];m[K]=U;q(U==1D)78{1M m[K]}77(e){};I m};f.Y.1C=f.Y.1r=J(m,1r,U){I N.D==2&&(P 1r!="m"||1r.1z==O)?f.3B(m,f.3D,1r):f.3A(m,f.3D,1r,U)};f.3C.76=f.3C.Z=J(m,Z,U){I N.D==2&&(P Z!="m"||Z.1z==O)?f.3B(m,f.2h,Z):f.3A(m,f.2h,Z,U)};f.3B=J(m,1W,Z){q(P Z!="m")I 1W(m,Z);1l{B 1m=[];M(B i=0;i<Z.D;i++)1m.1p(1W(m,Z[i]));I 1m}};f.3A=J(m,1W,Z,U){q(P Z!="m")1W(m,Z,U);1l{q(Z.1z==O)M(B i=0;i<Z.D;i++)1W(m,Z[i],U);1l M(B K 1E Z)1W(m,K,Z[K]!=1D?Z[K]:U)};I m};f.Y.75=J(1B,1C,2g){B U=f.Y.1r(1B,1C);I f.Y.1r(1B,1C,(U!=1D?U+" ":"")+2g)};f.Y.74=J(1B,1C,2g){I(3z 2W("(^|\\\\s)"+2g+"(\\\\s|$)")).2X(f.Y.1r(1B,1C))};f.Y.73=J(1B,1C,2g){B U=f.Y.1r(1B,1C);q(U)f.Y.1r(1B,1C,U.1V(3z 2W("(^|\\\\s+)"+2g+"(\\\\s|$)"),"$2"));I 1B};f.S={4f:J(v){B a=f.1k.1U(N),r=a[0];M(B i=0;i<a.D;i++)q(h.2q(r)<h.2q(a[i]))r=a[i];I r},1J:J(){B a=f.1k.1U(N),r=0;M(B i=0;i<a.D;i++)r+=a[i];I r/a.D},4e:J(x){I x>=0?h.u(x,1/3):-h.u(-x,1/3)},2r:J(v){I v*1R/h.4g},4d:J(2V){4h(2V<0)2V+=72;I 2V},2x:J(v){B a=f.1k.1U(N),r=a[0];M(B i=0;i<a.D;i++)r=h.2x(r,a[i]);I r},3y:J(v){B a=f.1k.1U(N),r=a[0];M(B i=0;i<a.D;i++)r=h.3y(r,a[i]);I r},1x:J(v){I v/1R*h.4g}};f.S.4f.X=[1q];f.S.1J.X=[1q];f.S.4e.X=[1q];f.S.2r.X=[1q];f.S.4d.X=[1q];f.S.2x.X=[O];f.S.3y.X=[O];f.S.1x.X=[1q];f.S.3u={};f.S.3u.71=J(x,y,z){J 4b(a,b,c){I(b-a)*c+a};B 3v=[1q.6Z,10.R-6,20.R-6,30.R-6,40.R-6,50.R-6,60.R-6,70.R-6,80.R-6,6Y.R-6,6X.R-6,6W.R-6,6V.R-6,6U.R-6,6T.R-6,6S.R-6,6R.R-6,43.R-6,6Q.R-6,4c.R-6,6P.R-6,6O.R-6,6N.R-6,6M.R-6,6L.R-6,6K.R-6,6J.R-6,6I.R-6,6H.R-6,6G.R-6,6F.R-6];B 1L=[[0.6E,0.6D,-0.6C],[0.6B,0.6A,-0.6z],[0.6y,0.6x,-0.6w],[0.6v,0.6u,-0.6t],[0.6s,0.6r,-0.6q],[0.6p,0.6o,-0.6n],[0.6m,0.6l,-0.6k],[0.6j,0.6i,-0.6h],[0.6g,0.6f,-0.6e],[0.6d,0.6c,-0.6b],[0.6a,0.69,-0.68],[0.67,0.66,-0.65],[0.64,0.62,-0.61],[0.5Z,0.5Y,-0.5X],[0.5W,0.5V,-1.5U],[0.5T,0.5S,-1.5R],[0.5Q,0.5P,-1.5O],[0.5N,0.5M,-1.5L],[0.5K,0.5J,-2.5I],[0.5H,0.5G,-2.5F],[0.5E,0.5D,-2.5C],[0.5B,0.5A,-3.5z],[0.5y,0.5x,-4.5w],[0.5v,0.5u,-5.5t],[0.5s,0.5r,-6.5q],[0.5p,0.5o,-8.5n],[0.5m,0.5l,-11.5k],[0.5j,0.5i,-15.5h],[0.5g,0.5f,-23.4c],[0.5e,0.5d,-40.5c],[0.5b,0.5a,-59.45]];B 3w,3x,p,1K,1A,i;q((x<1e-20)&&(y<1e-20)&&(z<1e-20))I-1;3w=(4*x)/(x+15*y+3*z);3x=(6*y)/(x+15*y+3*z);1A=0;M(i=0;i<31;i++){1K=(3x-1L[i][1])-1L[i][2]*(3w-1L[i][0]);q((i>0)&&(((1K<0)&&(1A>=0))||((1K>=0)&&(1A<0))))1b;1A=1K};q(i==31)I-1;1K=1K/h.W(1+1L[i][2]*1L[i][2]);1A=1A/h.W(1+1L[i-1][2]*1L[i-1][2]);p=1A/(1A-1K);I 1/(4b(3v[i-1],3v[i],p))};f.S.3u.58=J(1I,14,13,2l,19,18,2w,1S,2s,3r,3c){M(B i=0;i<6;i++)q(P N[i]!="1y"||3d(N[i]))I 57;q(P 2w=="1j")2w=2w.4a();1T(2w){Q"55":Q"54":Q"53":Q"52":B 2U=1S,1H=1I-2l,1c=h.W(h.u(14,2)+h.u(13,2)),1w=h.W(h.u(19,2)+h.u(18,2)),1a=1c-1w,2T=14-19,2S=13-18,1G=h.W(h.2F((h.u(2T,2)+h.u(2S,2)-h.u(1a,2))*26)/26),2R=1,2v=2U?0.51:0.44,49=2U?0.4Z:0.3p,3t=(h.W((1+(2v*1c))*(1+(2v*1w)))-1)/2v,2t=1+2v*3t,2Q=1+49*3t,48=2U?2:1,47=1,46=1,22=h.W(h.u(1H/(48*2R),2)+h.u(1a/ (47 * 2t), 2) + h.u(1G /(46*2Q),2));1b;Q"3s(2:1)":Q"4Y":1S=2;Q"3s(1:1)":Q"4X":Q"3s":B l=P 1S=="1y"?1S:1,c=P 2s=="1y"?2s:1;1H=1I-2l,1c=h.W(h.u(14,2)+h.u(13,2)),1w=h.W(h.u(19,2)+h.u(18,2)),1a=1c-1w,2T=14-19,2S=13-18,1G=h.W(h.2F((h.u(2T,2)+h.u(2S,2)-h.u(1a,2))*26)/26),2R=1I<16?0.4W:(0.4V*1I)/(1+0.4U*1I),2t=(0.4T*1c)/(1+0.4S*1c)+0.4R,F=h.W(h.u(1c,4)/(h.u(1c,4)+4Q)),2u=f.S.2r(h.3q(13,14))+(13>=0?0:2f),T=4P<=2u&&2u<=4O?0.56+h.2q(0.2*h.2e(f.S.1x(2u+4N))):0.36+h.2q(0.4*h.2e(f.S.1x(2u+35))),2Q=2t*(F*T+1-F),22=h.W(h.u(1H/(l*2R),2)+h.u(1a/ (c * 2t), 2) + h.u(1G /2Q,2));1b;Q"4M":Q"2k":Q"4L":Q"4K":Q"4J":Q"4I":B 3o=h.u(25,7),41=P 1S=="1y"?1S:1,3Z=P 2s=="1y"?2s:1,3Y=P 3r=="1y"?3r:1,1c=h.W(h.u(14,2)+h.u(13,2)),1w=h.W(h.u(19,2)+h.u(18,2)),2P=f.S.1J(1c,1w),G=.5*(1-h.W(h.u(2P,7)/(h.u(2P,7)+3o))),2O=1I,2p=(1+G)*14,2d=13,2N=2l,2o=(1+G)*19,2c=18,2b=h.W(h.u(2p,2)+h.u(2d,2)),2a=h.W(h.u(2o,2)+h.u(2c,2)),1i=2p==0&&2d==0?0:f.S.2r(h.3q(2d,2p))+(2d>=0?0:2f),1h=2o==0&&2c==0?0:f.S.2r(h.3q(2c,2o))+(2c>=0?0:2f),2G=1h-1i>1R?1:(1h-1i<-1R?2:0),3n=2G==0?1h-1i:(2G==1?1h-1i-2f:1h+2f-1i),2M=2N-2O,1H=2M,2L=2a-2b,1a=2L,2K=2*h.W(2b*2a)*h.42(f.S.1x(3n/2)),1G=2K,3m=f.S.1J(2O,2N),29=f.S.1J(2b,2a),2n=2b*2a==0?3:(h.2q(1h-1i)<=1R?0:(1h+1i<2f?1:2)),1Q=2n==3?1i+1h:(2n==0?f.S.1J(1i,1h):(2n==1?f.S.1J(1i,1h)+1R:f.S.1J(1i,1h)-1R)),2J=h.u(3m-50,2),3l=1+.3p*2J/h.W(20+2J),3k=1+.44*29,T=1-.17*h.2e(f.S.1x(1Q-30))+.24*h.2e(f.S.1x(2*1Q))+.32*h.2e(f.S.1x(3*1Q+6))-.2*h.2e(f.S.1x(4*1Q-63)),3j=1+.3p*29*T,3i=30*h.4H(-1*h.u((1Q-43)/25,2)),3h=2*h.W(h.u(29,7)/(h.u(29,7)+3o)),3g=-h.42(f.S.1x(2*3i))*3h,3f=2M/3l/ 41,						2I = 2L/3k/ 3Z,						2H = 2K/3j/3Y,22=h.W(h.u(3f,2)+h.u(2I,2)+h.u(2H,2)+3g*2I*2H);q(3c){r=(1c+"|"+1w+"|"+2P+"|"+G+"|"+2O+"|"+2p+"|"+2d+"|"+2N+"|"+2o+"|"+2c+"|"+2b+"|"+2a+"|"+1i+"|"+1h+"|"+3n+"|"+2M+"|"+2L+"|"+2K+"|"+3m+"|"+29+"|"+1Q+"|"+2J+"|"+3l+"|"+3k+"|"+T+"|"+3j+"|"+3i+"|"+3h+"|"+3g+"|"+3f+"|"+2I+"|"+2H+"|"+22+"|"+2G+"|"+2n).3e("|");28="4G";t=[];n=28.1P("G");M(i=0;i<r.D;i++){a=i+n<28.D?28[i+n]:"A"+28[i+n-28.D];t.1p(a+": "+r[i])}I t.27("\\n")};1b;2m:B 1H=1I-2l,1c=h.W(h.u(14,2)+h.u(13,2)),1w=h.W(h.u(19,2)+h.u(18,2)),1a=1c-1w,1G=h.W(h.2F((h.u(14-19,2)+h.u(13-18,2)-h.u(1a,2))*26)/26),22=h.W(h.u(1H,2)+h.u(14-19,2)+h.u(13-18,2));q(3d(1G)){q(3X.4F.4E.1P("?3c")>-1)4D(\'14: \'+14+\'\\4C: \'+19+\'\\2E.u(14 - 19, 2): \'+h.u(14-19,2)+\'\\4B: \'+13+\'\\4A: \'+18+\'\\2E.u(13 - 18, 2): \'+h.u(13-18,2)+\'\\4z: \'+1a+\'\\2E.u(1a, 2): \'+h.u(1a,2)+\'\\2E.u(14 - 19, 2) + h.u(13 - 18, 2) - h.u(1a, 2): \'+(h.u(14-19,2)+h.u(13-18,2)-h.u(1a,2)))}};I{E:22,L:1H,C:1a,H:1G,a:14-19,b:13-18}};',62,506,'|||||||||||||||jsapi||Math|||this||object||||if||||pow|||||||var||length|||||return|function|propertyName||for|arguments|Array|typeof|case|0e|math||value|prototype|sqrt|_args|dom|property||||b1|a1||||b2|a2|dC|break|C1|constants||apply|index|h2_|h1_|string|array|else|result|ua|_match|push|Number|attribute|_callbacks|OBJECTTYPES|objectType|from|C2|rad|number|constructor|dm|element|attr|null|in|_this|dH|dL|L1|avg|di|uvt|delete|attributeName|slice|indexOf|h__avg|180|p1|switch|flat|replace|callback|match|shift|pop||howMany|dE||||100000000000000|join|alpha|C__avg|C2_|C1_|b2_|b1_|cos|360|word|_property|true|ln||L2|default|h__avg_cond|a2_|a1_|abs|deg|p2|SC|H1|K1|method|max|String|mozilla|extend|expression|arrayMethodName|argument|nMath|round|dh_cond|AL|AK|AB|dH_|dC_|dL_|L2_|L1_|C_avg|SH|SL|db|da|textiles|num|RegExp|test|style|useragent||||toString|parseFloat|||_|windows|hasValidArguments|STRING|splice|debug|isNaN|split|AJ|R_T|R_C|dTheta|S_H|S_C|S_L|L__avg|dh_|pow25_7|015|atan2|p3|cmc|C_|color|rt|us|vs|min|new|_set|_get|util|_attribute|ATTRIBUTE_ALIASES|isNode|props|safari|trim|mac|linux|concat|_arguments|Function|NUMBER|arrayMethodNames|unshift|regexp|len|elementsToMove|__apply__|sargs|args|window|k_H|k_C||k_L|sin|275|045||KH|KC|KL|K2|toLowerCase|LERP|325|longToUnsigned|cbrt|absmax|PI|while|cssText|msie|konqueror|khtml|Wv|str|NODETYPES|parseString|OBJECT|REGEXP|DATE|BOOLEAN|FUNCTION|initialized|elt|toFixed|removedElements|ndC|nb2|nb1|na2|alert|href|location|ABCDEFGHIJKLMNOPQRSTUVWXYZ|exp|cie2000|cie2k|cie00|2000|00|168|345|164|1900|638|0131|0638|01765|040975|511|cmc11|cmc21|014||048|cie1994|cie94|1994|94||NaN|delta|116|36051|33724|770|36038|32931|36011|32129|628|35968|31320|324|35907|30505|5955|35823|29685|7262|35714|28863|3762|35577|28039|3633|35407|27218|5814|35200|26400|9641|34951|25591|4681|34655|24792|0637|34308|24010|7298|33904|23247|4512|33439|22511|2168|32909|21807|0182|32312|21142|84901|31647|20525||70471|30921||19962|58204|30141|19462|47888|29326|19032|44278|28997|18880|40955|28668|18740|37915|28342|18611|35156|28021|18494|32675|27709|18388|30470|27407|18293|28539|27119|18208|26876|26846|18133|25479|26589|18066|24341|26352|18006|600|575|550|525|500|475|450|425|400|375|350|300|250|225|200|175|150|125|100|90|MIN_VALUE||XYZ2CorColorTemp|4294967296|attributeRemoveWord|attributeHasWord|attributeAddWord|prop|catch|try|setAttribute|removeAttribute|getAttribute|maxLength|maxlength|readOnly|readonly|htmlFor|className|class|opera|compatible|gecko|win32|2ie|ms|explorer|internet|ocket|microsoft|userAgent|navigator|cloneNode|nodeType|NOTATION|DOCUMENT_FRAGMENT|DOCUMENT_TYPE|DOCUMENT|COMMENT|PROCESSING_INSTRUCTION|ENTITY|ENTITY_REFERENCE|CDATA_SECTION|TEXT|ATTRIBUTE|ELEMENT|parseInt|false|callee|valueOf|getByXpath|xpath|xml|xhtml|html|Date|Boolean|continue|sort|reverse|some|map|lastIndexOf||forEach|filter|every|ARRAY|floor|ceil|substr|eval|Object'.split('|'),0,{}))
+/*]]>*/</script>
+	<script type="text/javascript" >/*<![CDATA[*/
+eval(function(p,a,c,k,e,d){e=function(c){return(c<a?"":e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp("\\b"+e(c)+"\\b","g"),k[c])}}return p}('q 1Q(a,b){n a-b};8.1b.1a=q(a){o r=[];D(o i=0;i<a.t;i++){g(a[i]!=P&&a[i].1G==1F)r=r.4B(8.1b.1a(a[i]));H r.4A(a[i])};n r};8.1b.1a.4z=[1F];8.c.V=q(){o a=8.1b.1a(1B),V,w=a.2w(1Q);g(w.t%2==0)V=(w[w.t/2]+w[w.t/ 2 + 1]) /2;H V=w[(w.t+1)/2];n V};8.c.4y=q(){o a=8.1b.1a(1B),V=8.c.V(a),w=a.2w(1Q);D(o i=0;i<w.t;i++)w[i]=k.4x(w[i]-V);n 8.c.V(w)};8.c.4w=q(){n k.4v(8.c.2v(8.1b.1a(1B)))};8.c.2v=q(){o a=8.1b.1a(1B);D(o m,s=0,l=a.t;l--;s+=a[l]);D(m=s/a.t,l=a.t,s=0;l--;s+=k.p(a[l]-m,2));n s/a.t};8.c.f.4u=q(2p,2o,2n,2t,2r,v){g(!v)v=\'2u\';g(1g v==\'1E\'){4t(v){1A\'1m 1W\':v=[[1,0,0],[0,1,0],[0,0,1]];1P;1A\'4s 1j\':v=[[0.4r,0.4q,-0.4p],[-0.4o,1.4n,0.4m],[0.1s,0.1s,0.4l]];1P;1A\'4k\':v=[[0.4j,0.4i,-0.4h],[-0.4g,1.4f,0.4e],[0.4d,0.4c,0.4b]];1P;1A\'2u\':4a:v=[[0.49,0.48,-0.47],[-0.46,1.45,0.44],[0.43,-0.42,1.41]]}};g(v.1G!=8.c.F)v=W 8.c.F(v);o 2s=8.c.f.N(2t),1y=v.11(2s),2q=8.c.f.N(2r),1z=v.11(2q);n v.1q().11([[1z[0]/1y[0], 0, 0], [0, 1z[1]/1y[1],0],[0,0,1z[2]/1y[2]]]).11(v).11([2p,2o,2n])};8.c.f.40=q(L,a,b,h,e,1e){o 1m=8.c.f.2m(L,a,b,h||"1i");n 8.c.f.2l(1m[0],1m[1],1m[2],h||"1i",e,1e)};8.c.f.2m=q(L,a,b,h,e){g(!e)e=1.0;o Y=(L+16)/J,X=a/2f+Y,Z=Y-b/2d;o E=2g/1v,K=1v/27;g(k.p(Y,3)>E)Y=k.p(Y,3);H Y=(Y-16/J)/ (K /J);g(k.p(X,3)>E)X=k.p(X,3);H X=(X-16/J)/ (K /J);g(k.p(Z,3)>E)Z=k.p(Z,3);H Z=(Z-16/J)/ (K /J);o 1x=8.c.f.N(h,e);X*=1x[0];Y*=1x[1];Z*=1x[2];n[X,Y,Z]};8.c.f.2l=q(X,Y,Z,h,e,1e){g(!e)e=1.0;o S=8.c.f.1k(0.3Z,0.3Y,0.3X,0.3W,0.3V,0.3U,h||"1j",1.0).11([X,Y,Z]);D(o i=0;i<3;i++){g(S[i]>0.3T){S[i]=1.2k*k.p(S[i],1/2.4)-0.2k}H{S[i]*=12.3S}S[i]=k.3R(1.0,k.3Q(0,S[i]))*e;g(1e)S[i]=k.1w(S[i])}n S};8.c.f.1X=q(T,e){o I=8.c.f.2j(T,e);n 8.c.f.1d(I[0],I[1],I[2])};8.c.f.2j=q(T,e){g(!e)e=1.0;g(1g T=="1E"){o O=8.c.f.1c(T,P,e);n 8.c.f.1N(O[0],O[1],O[2])}o 1f=1l<=T&&T<=2i?((-4.3P*k.p(10,9))/k.p(T,3))+((2.3O*k.p(10,6))/k.p(T,2))+((0.3N*k.p(10,3))/T)+0.3M:(2i<T&&T<=1M?((-2.3L*k.p(10,9))/k.p(T,3))+((1.3K*k.p(10,6))/k.p(T,2))+((0.3J*k.p(10,3))/T)+0.3I:P),2h=1f!=P?-3*k.p(1f,2)+2.3H*1f-0.3G:P;n 1f==P?P:[1f,2h,e]};8.c.f.3F=q(C,M,Y,K,e,1e){g(!e)e=1.0;C=(C*(1-K)+K);M=(M*(1-K)+K);Y=(Y*(1-K)+K);o R,G,B;R=(1-C)*e;G=(1-M)*e;B=(1-Y)*e;g(1e){R=k.1w(R);G=k.1w(G);B=k.1w(B)}n[R,G,B]};8.c.f.3E=q(X,Y,Z,h){h=8.c.f.N(h,1D);o E=2g/1v,K=1v/27,19=X/h[0],18=Y/h[1],1u=Z/h[2],2e=19>E?8.c.1O(19):(K*19+16)/J,1t=18>E?8.c.1O(18):(K*18+16)/J,2c=1u>E?8.c.1O(1u):(K*1u+16)/J,L=J*1t-16,a=2f*(2e-1t),b=2d*(1t-2c);n[L,a,b]};8.c.f.1d=q(x,y,Y){g(y==0)n[0,0,0];g(Y==P)Y=1.0;o X=(x*Y)/y,Z=(1-x-y)*Y/y;n[X,Y,Z]};8.c.f.1N=q(X,Y,Z,h){g(X==Y&&Y==Z&&Z==0){h=8.c.f.N(h);o I=8.c.f.1N(h[0],h[1],h[2]);n[I[0],I[1],0.0]}o x=X/(X+Y+Z),y=Y/(X+Y+Z);n[x,y,Y]};8.c.f.3D=q(T){o I=8.c.f.2b(T);n 8.c.f.1d(I[0],I[1],I[2])};8.c.f.2b=q(T){o x,y;g(2a<=T&&T<=1l)x=(-0.3C*(k.p(10,9)/k.p(T,3))-0.3B*(k.p(10,6)/k.p(T,2))+0.3A*(k.p(10,3)/T)+0.3z);H g(1l<=T&&T<=1M)x=(-3.3y*(k.p(10,9)/k.p(T,3))+2.3x*(k.p(10,6)/k.p(T,2))+0.3w*(k.p(10,3)/T)+0.3v);H n P;g(2a<=T&&T<=29)y=(-1.3u*k.p(x,3)-1.3t*k.p(x,2)+2.3s*x-0.3r);H g(29<=T&&T<=1l)y=(-0.3q*k.p(x,3)-1.3p*k.p(x,2)+2.3o*x-0.3n);H g(1l<=T&&T<=1M)y=(3.3m*k.p(x,3)-5.3l*k.p(x,2)+3.3k*x-0.3j);n[x,y,1.0]};8.c.f.1k=q(19,18,1L,1K,1J,1I,h,e){g(!e)e=1.0;o U=[19,18,1L,1K,1J,1I,h,e].1o(","),u=8.c.f.1k.u[U];g(u)n u;h=8.c.f.N(h,e);o 17=8.c.f.1d(19,18,e),15=8.c.f.1d(1L,1K,e),14=8.c.f.1d(1J,1I,e),Q=W 8.c.F([[17[0],15[0],14[0]],[17[1],15[1],14[1]],[17[2],15[2],14[2]]]).1q().11(h);n 8.c.f.1k.u[U]=W 8.c.F([[Q[0]*17[0],Q[1]*15[0],Q[2]*14[0]],[Q[0]*17[1],Q[1]*15[1],Q[2]*14[1]],[Q[0]*17[2],Q[1]*15[2],Q[2]*14[2]]]).1q()};8.c.f.1k.u={};8.c.f.1H={"1Z":{"E":{"X":1.1s,"Z":1.1s}},"24 23-22":{"A":{"X":1.3i,"Z":0.3h},"C":{"X":0.3g,"Z":1.3f},"1i":{"X":0.3e,"Z":0.3d},"28":{"X":0.3c,"Z":0.3b},"1j":{"X":0.3a,"Z":1.39},"26":{"X":0.38,"Z":1.37},"36":{"X":0.35,"Z":0.34},"33":{"X":0.32,"Z":1.31},"30":{"X":1.2Z,"Z":0.2Y}},"25":{"1i":{"X":0.2X,"Z":0.2W},"1j":{"X":0.2V,"Z":1.2U}},"21 & 20":{"A":{"X":1.2T,"Z":0.2S},"B":{"X":0.2R,"Z":0.2Q},"C":{"X":0.2P,"Z":1.2O},"28":{"X":0.2N,"Z":0.2M},"1j":{"X":0.2L,"Z":1.2K},"26":{"X":0.2J,"Z":1.2I}}};8.c.f.1c=q(1r,13,e){g(!13)13=["25","24 23-22","21 & 20","1Z"];g(!e)e=1.0;o U=[1r,13,e].1o(","),u=8.c.f.1c.u[U];g(u)n u;o O=P;D(o i=0;i<13.t;i++){g(!8.c.f.1H[13[i]])1h\'1Y 2H "\'+13[i]+\'"\';O=8.c.f.1H[13[i]][1r.2G()];g(O)n 8.c.f.1c.u[U]=[O["X"]*e,1.0*e,O["Z"]*e]}1h\'1Y O "\'+1r+\'"\'};8.c.f.1c.u={};8.c.f.N=q(h,e){g(h&&h.1G==1F)n h;g(!e)e=1.0;g(!h)h="1i";o U=[h,e].1o(","),u=8.c.f.N.u[U];g(u)n u;g(1g h=="1E")h=8.c.f.1c(h);H g(1g h=="1p")h=8.c.f.1X(h);g(e>1.0&&h[1]==1D)e=1.0;g(h[1]*e>1D)1h"Y 2F 2E 1C 2D 2C 1W: "+(h[1]*e);n 8.c.f.N.u[U]=[h[0]*e,h[1]*e,h[2]*e]};8.c.f.N.u={};8.c.F=q(d){g(d.t!=3)1h\'1V 1p 1C 2B D 1U d: \'+d.t;D(o i=0;i<d.t;i++){g(d[i].t!=3)1h\'1V 1p 1C 2A D 1U d: \'+d[i].t;7[i]=[];D(o j=0;j<d[i].t;j++){7[i][j]=d[i][j]}};7.t=d.t};8.c.F.2z={2y:q(d){n W 8.c.F([[7[0][0]+d[0][0],7[0][1]+d[0][1],7[0][2]+d[0][2]],[7[1][0]+d[1][0],7[1][1]+d[1][1],7[1][2]+d[1][2]],[7[2][0]+d[2][0],7[2][1]+d[2][1],7[2][2]+d[2][2]]])},1S:q(){n 7.1T().1R()},1T:q(){n W 8.c.F([[(7[1][1]*7[2][2]-7[1][2]*7[2][1]),-1*(7[1][0]*7[2][2]-7[1][2]*7[2][0]),(7[1][0]*7[2][1]-7[1][1]*7[2][0])],[-1*(7[0][1]*7[2][2]-7[0][2]*7[2][1]),(7[0][0]*7[2][2]-7[0][2]*7[2][0]),-1*(7[0][0]*7[2][1]-7[0][1]*7[2][0])],[(7[0][1]*7[1][2]-7[0][2]*7[1][1]),-1*(7[0][0]*7[1][2]-7[1][0]*7[0][2]),(7[0][0]*7[1][1]-7[0][1]*7[1][0])]])},z:q(){n((7[0][0]*7[1][1]*7[2][2]+7[1][0]*7[2][1]*7[0][2]+7[0][1]*7[1][2]*7[2][0])-(7[2][0]*7[1][1]*7[0][2]+7[1][0]*7[0][1]*7[2][2]+7[2][1]*7[1][2]*7[0][0]))},1q:q(){o z=7.z(),d=7.1S();n W 8.c.F([[d[0][0]/z,d[0][1]/z,d[0][2]/z],[d[1][0]/z,d[1][1]/z,d[1][2]/z],[d[2][0]/z,d[2][1]/z,d[2][2]/z]])},11:q(d){g(1g d[0]=="1p"){n[d[0]*7[0][0]+d[1]*7[0][1]+d[2]*7[0][2],d[0]*7[1][0]+d[1]*7[1][1]+d[2]*7[1][2],d[0]*7[2][0]+d[1]*7[2][1]+d[2]*7[2][2]]}n W 8.c.F([[7[0][0]*d[0][0]+7[0][1]*d[1][0]+7[0][2]*d[2][0],7[0][0]*d[0][1]+7[0][1]*d[1][1]+7[0][2]*d[2][1],7[0][0]*d[0][2]+7[0][1]*d[1][2]+7[0][2]*d[2][2]],[7[1][0]*d[0][0]+7[1][1]*d[1][0]+7[1][2]*d[2][0],7[1][0]*d[0][1]+7[1][1]*d[1][1]+7[1][2]*d[2][1],7[1][0]*d[0][2]+7[1][1]*d[1][2]+7[1][2]*d[2][2]],[7[2][0]*d[0][0]+7[2][1]*d[1][0]+7[2][2]*d[2][0],7[2][0]*d[0][1]+7[2][1]*d[1][1]+7[2][2]*d[2][1],7[2][0]*d[0][2]+7[2][1]*d[1][2]+7[2][2]*d[2][2]]])},1R:q(){n W 8.c.F([[7[0][0],7[1][0],7[2][0]],[7[0][1],7[1][1],7[2][1]],[7[0][2],7[1][2],7[2][2]]])},2x:q(){o 1n=\'[\';D(o i=0;i<7.t;i++){g(i>0)1n+=\', \';1n+=\'[\'+7[i].1o(\', \')+\']\'};n 1n+\']\'}};',62,286,'|||||||this|jsapi||||math|matrix|scale|color|if|whitepoint|||Math|||return|var|pow|function|||length|cache|MA|sorted|||determinant||||for||Matrix3x3||else|xyY|116||||get_whitepoint|illuminant|null|SrSgSb||RGB||cachehash|median|new|||||multiply||priority|XYZb|XYZg||XYZr|yr|xr|flat|array|get_standard_illuminant|xyY2XYZ|round_|xD|typeof|throw|D50|D65|xyz_to_rgb_matrix|4000|XYZ|str|join|number|invert|illuminant_name|00000|fy|zr|24389|round|ref_XYZ|pybs|pybd|case|arguments|of|100|string|Array|constructor|standard_illuminants|yb|xb|yg|xg|25000|XYZ2xyY|cbrt|break|sortNumber|transpose|adjoint|cofactors|3x3|Invalid|scaling|CIEDCorColorTemp2XYZ|Unrecognized|None|Stiles|Wyszecki|01|E308|ASTM|ICC|D75||D55|2222|1667|planckianCT2xyY|fz|200|fx|500|216|yD|7000|CIEDCorColorTemp2xyY|055|XYZ2RGB|Lab2XYZ|ZS|YS|XS|XYZWD|whitepoint_destination|XYZWS|whitepoint_source|Bradford|variance|sort|toString|add|prototype|columns|rows|after|range|out|value|toUpperCase|standard|22558|94939|08813|95017|92085|95642|18103|98041|85223|99072|35547|09828|0890|9505|8249|9642|64350|00962|F11|08747|95041|F7|67393|99186|F2|22638|94972|08883|95047|92149|95682|82521|96422|18232|98074|35585|09850|37001483|75112997|87338670|0817580|16748867|09137015|37418593|9549476|20219683|18555832|34811020|1063814|24039|2226347|1070379|0258469|179910|8776956|2343580|2661239|planckianCT2XYZ|XYZ2Lab|CMYK2RGB|275|87|237040|24748|9018|0064|244063|09911|9678|607|max|min|92|0031308|0600|1500|6000|3000|3300|6400|Lab2RGB|0296|0685|0389|0367|7135|7502|1614|2664|8951|default|9834|0136|0030|0061|6975|7036|1624|4296|7328|CAT02|91822|04570|16532|22630|08081|70760|40024|HPE|switch|adapt|sqrt|stddev|abs|mad|_args|push|concat'.split('|'),0,{}))
+/*]]>*/</script>
+	<script type="text/javascript" >/*<![CDATA[*/
+eval(function(p,a,c,k,e,d){e=function(c){return(c<a?"":e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp("\\b"+e(c)+"\\b","g"),k[c])}}return p}('B p;p=6q.3o;p.2y=18(v,6r){U(B i=0;i<c.q;i++)8(6r?(c[i]+"").1Z()==(v+"").1Z():c[i]==v)17 i;17-1};8(!p.V)p.V=p.2y;p=6p.3o;p.4r=18(){B o=2P c.4Z();U(B i 4p c){8(c[i]!=W&&(c[i].4Z==6q||c[i].4Z==6p))o[i]=c[i].4r();16 o[i]=c[i]};17 o};p=9B.3o;p.P=18(48){B n=M.9A(10,48||0);17 M.1O(c*n)/n};p.2W=18(4X,4Y){B i,v=(4Y!=W?c.9z(4Y):c+"");8((i=v.V("."))>-1)4X+=v.1v(i).q;4W(v.q<4X)v=0+v;17 v};p.9y=18(48){B v=c+"";4W(v.q<48+1)v=0+v;17 v};p=3X.3o;p.P=18(){17 c};p.53=18(n){B 2o="";U(B i=0;i<n;i++)2o+=c;17 2o};18 3D(1P){c.12=[];c.1f=[];c.N=[];c.2U=".";c.1p="4m";B e=1h.1Q[\'29\'].1j;c.4J=e[\'9x\'].1a;c.1p=51(52(c.4J))[0].1Z();8(1P){c.1P=1P;1P=4t(1P);B 4V=/(^|\\s)9w\\s+(.*)\\s+9v(\\s|$)/i,4T=/(^|\\s)9u\\s+/i,4S=/\\9t(\\s|$)/i,6n=/(^|\\s)4R(\\w+)\\s+([\\s\\S]*)\\s+4Q\\2(\\s|$)/9s,4U=/(^|\\s)4R(\\w+)\\s+([\\s\\S]*)\\s+4Q\\2(\\s|$)/i,3p,47,1f=1P.4b(4V),i,v;8(1f&&1f[2]){c.1f=4u(1f[2],1);4W((3p=1P.6o(4T))>-1&&(47=1P.6o(4S))>3p){8(!c.N.q){B 12=5A(1P).1v(0,3p).1H(4V,"");8(v=12.4b(6n))U(i=0;i<v.q;i++){12=12.1H(4U,"\\r"+(v[i].1H(4U,"$2 $3").1H(/\\r/g,"\\n")))};12=2q(12).1M(/\\r/);U(i=0;i<12.q;i++){12[i]=2q(12[i]).1H(/\\s+/,"\\r").1M("\\r");c.46(12[i][0],12[i][1],"3t")}};c.N=c.N.2i(4u(1P.9r(3p,47).1H(4T,"").1H(4S,"")));1P=1P.1v(47+9)}}};8(c.1f.V(\'9q\')>-1&&c.1f.V(\'9p\')>-1&&c.1f.V(\'9o\')>-1&&c.1f.V(\'9n\')>-1)c.2m=\'2c\';16 c.2m=\'4m\';8(1w[c.1p])c.1p=1w[c.1p].1p;16 c.1p=c.2m;17 1P?1e:1s};p=3D.3o;p.6l=18(){B 12=[],i,j,v;U(i=0;i<c.12.q;i++){8(c.12[i][1]&&c.12[i][1].V("\\n")>-1){12.G(["4R"+c.12[i][0]]);v=c.12[i][1].1M("\\n");U(j=0;j<v.q;j++)12.G([v[j]]);12.G(["4Q"+c.12[i][0]])}16 12.G(c.12[i])};17 3O(12)};p.9m=18(12,1F){U(B i=0;i<12.q;i++){c.46(12[i][0],12[i][1],1F)}};p.6m=18(1F){B 34=2P 6b();c.46("9l","\\""+(34.9k()+1)+"/"+34.9j()+"/"+34.9i()+"\\" # 9h: "+34.9g().2W(2)+":"+34.9f().2W(2),1F)};p.9e=18(1F){c.6m(1F)};p.46=18(1y,1a,1F){8(!1y)17 1s;8(1a!=W)1a+="";8(1y.1Z()=="6k"||1y.1Z()=="9d")17 1s;8(!c.12[1y.1Z()]||1F=="3t"||1y.1Z()=="9c"){B 12=[1y];8(1a!=W&&1a!=="")12.G(1a);c.12.G(12);8(!c.12[1y.1Z()])c.12[1y.1Z()]=[];c.12[1y.1Z()].G(c.12[c.12.q-1])}16 8(1F=="9b"){U(B i=0;i<c.12[1y.1Z()].q;i++){8(1a==W||1a==="")c.12[1y.1Z()][i].9a(1,1);16 c.12[1y.1Z()][i][1]=1a}}};p.99=18(){17(c.12.q?c.6l()+"\\n":"")+"6k\\t"+c.1f.q+"\\98\\n"+3O(c.1f,1)+"\\97\\95\\t"+c.N.q+"\\94\\n"+2U(3O(c.N),c.2U=="."?"\\\\,":"\\\\.",c.2U)+"\\93"};p.5g=18(3B){B f=1h.1Q,e=f[\'29\'].1j,1l=1w[f[\'21\'].1j[\'3J\'].1a];8(3B!==1s)f[\'21\'].1j[\'3w\'].5v=[\'92\',\'91\',\'90\'].V(1l.24);f[\'21\'].1j[\'3w\'].1n=1l.8Z;B h=1l.h,7=[],1c,1I,1K,R,1A,2v,I,T,1U,2u,4L=f[\'21\'].1j[\'8Y\'].38,25=e[\'8X\'].1a.1M(/\\s+/),45=[],1N=e[\'8W\'].1a.1M(/\\s+/),44=[],4P,28=e[\'8V\'].1a.1M(/\\s+/),1L=e[\'8U\'].1a.1M(/\\s+/),4O=[],1E=e[\'8T\'].1a.1M(/\\s+/),4N=[],43,3n,2e,4K=[],1F=f[\'21\'].1j[\'8S\'].1a,2D=f[\'21\'].1j[\'8R\'].38,2C=e[\'6c\'].1a,n=0,o=1q.q-1,4y=1l.1q.q>3?3:0,4x=1l.1q.q>3?6:2,3i,24=f[\'21\'].1j[\'3w\'].1a,3m,4f=f[\'21\'].1j[\'5a\'].38,4v=1l.4v,2T=(c.1f.2y("8Q",1e)<0||c.1f.2y("8P",1e)<0||c.1f.2y("8O",1e)<0),2S=(c.1f.2y("8N",1e)<0||c.1f.2y("8M",1e)<0||c.1f.2y("8L",1e)<0),2R=f[\'21\'].1j[\'4g\'].38;8(25.q==3){U(B i=0;i<25.q;i++){25[i]=3Q(25[i]);45[i]=25[i].P(2)};U(B i=0;i<25.q;i++){1N[i]=25[i]/25[1]*1k;44[i]=1N[i].P(2)};4P=M.1O(u.D.11.6j(1N[0],1N[1],1N[2]))}8(28.q==3){U(B i=0;i<28.q;i++){28[i]=3Q(28[i])}}8(1L.q==3){U(B i=0;i<1L.q;i++){1L[i]=3Q(1L[i]);4O[i]=1L[i].P(2)};U(B i=0;i<1L.q;i++){1E[i]=1L[i]/1L[1]*1k;4N[i]=1E[i].P(2)};43=M.1O(u.D.11.6j(1E[0],1E[1],1E[2]));3n=M.1O(43/1k)*1k;8(4L)2e=u.D.11.8K(3n);16 2e=u.D.11.8J(3n);U(B i=0;i<2e.q;i++){2e[i]=2e[i]*1k;4K[i]=2e[i].P(2)}}c.13=[\'	<33 4B="1h.26(\\\'2j\\\').1r.2f = 1h.26(\\\'2j\\\').1r.2f != \\\'27\\\' ? \\\'27\\\' : \\\'\\\'">8I 8H</33>\',\'	<2B 4A="0" Q="2j" 1p="2j">\',\'		<14>\',\'			<A>5M:</A>\',\'			<F>\'+e[\'8G\'].1a+\'</F>\',\'		</14>\',\'		<14>\',\'			<A>8F:</A>\',\'			<F>\'+e[\'8E\'].1a+\'</F>\',\'		</14>\',(e[\'6i\'].1a?\'<14><A>8D 8C:</A><F>\'+e[\'6i\'].1a+\'</F></14>\':\'\'),\'		<14>\',\'			<A>6h:</A>\',\'			<F>\'+e[\'8B\'].1a+\'</F>\',\'		</14>\'];8(25.q==3)c.13=c.13.2i([\'		<14>\',\'			<A>6h 4M 3f (6g):</A>\',\'			<F>\'+45.15(\' \')+(44.15(\' \')!=45.15(\' \')?\' (\'+44.15(\' \')+\')\':\'\')+\', 6f = \'+4P+\'K</F>\',\'		</14>\']);8(1L.q==3)c.13=c.13.2i([\'		<14>\',\'			<A>3Z 6e:</A>\',\'			<F>\'+1L[1].P(1)+\' 6d/m²</F>\',\'		</14>\',\'		<14>\',\'			<A>3Z 4M 3f (6g):</A>\',\'			<F>\'+4O.15(\' \')+\' (\'+4N.15(\' \')+\'), 6f = \'+43+\'K</F>\',\'		</14>\',\'		<14>\',\'			<A>8A 1K 4M (3f):</A>\',\'			<F>\'+3n+\'K \'+(4L?\'8z\':\'8y\')+\' (\'+4K.15(\' \')+\')</F>\']);8(28.q==3&&28[0]>-1&&28[1]>-1&&28[2]>-1)c.13=c.13.2i([\'		<14>\',\'			<A>3Z 8x 6e:</A>\',\'			<F>\'+28[1].P(4)+\' 6d/m²</F>\',\'		</14>\',\'		<14>\',\'			<A>8w:</A>\',\'			<F>\'+(1L[1]/ 28[1]).P(1) + \':1</F>\',\'		</14>\']);c.13=c.13.2i([\'		</14>\',\'		<14>\',\'			<A>8v 8u:</A>\',\'			<F>\'+(8t||\'8s\')+\'</F>\',\'		</14>\',\'		<14>\',\'			<A>8r:</A>\',\'			<F>\'+c.4J+\'</F>\',\'		</14>\',\'		<14>\',\'			<A>8q 8p:</A>\',\'			<F>\'+e[\'6c\'].1a+\'</F>\',\'		</14>\',\'		<14>\',\'			<A>8o 1l:</A>\',\'			<F>\'+1l.1y+\'</F>\',\'		</14>\',\'		<14>\',\'			<A>6b:</A>\',\'			<F>\'+e[\'8n\'].1a+\'</F>\',\'		</14>\',\'	</2B>\']);B 5N=c.13.q;c.13=c.13.2i([\'	<1b Q="2A">\',\'	<33 4B="1h.26(\\\'2A\\\').1r.2f = 1h.26(\\\'2A\\\').1r.2f != \\\'27\\\' ? \\\'27\\\' : \\\'\\\'">8m</33>\',\'	<2B 4A="0" 1p="2A">\',\'		<14>\',\'			<A Q="6a-69">8l</A><A>5L</A><A>8k</A><A>#</A><A 32="2">&#1g;</A><A>8j</A><A>&#1g;</A><A>8i</A>\',\'		</14>\']);B 41=[];U(B j=0;j<h.q;j++){7[j]={E:[],L:[],C:[],H:[],a:[],b:[],g:[],1u:[],z:W};8(h[j][1].q==1){4G(h[j][1][0]){O\'8h\':8(1B.1Y){7[j].z=(1B.1Y[0]/2x*1k).P(1);7[j].3j=7[j].z+\'%<3h />(\'+1B.1Y[0]+\'/\'+2x+\')\'}16{h[j][3]=W;h[j][4]=W;2t}J;O\'8g\':8(1B.1Y){7[j].z=(1B.1Y[1]/2x*1k).P(1);7[j].3j=7[j].z+\'%<3h />(\'+1B.1Y[1]+\'/\'+2x+\')\'}16{h[j][3]=W;h[j][4]=W;2t}J;O\'8f\':8(1B.1Y){7[j].z=(1B.1Y[2]/2x*1k).P(1);7[j].3j=7[j].z+\'%<3h />(\'+1B.1Y[2]+\'/\'+2x+\')\'}16{h[j][3]=W;h[j][4]=W;2t}J;O\'8e\':8(1B.1Y){B 4I=M.1W(1Y[0],1Y[1],1Y[2]);7[j].z=(4I/2x*1k).P(1);7[j].3j=7[j].z+\'%<3h />(\'+4I+\'/\'+2x+\')\'}16{h[j][3]=W;h[j][4]=W;2t}J;O\'65\':8(1L.q==3){R=u.D.11.2p(2e[0],2e[1],2e[2]);T=u.D.11.2p(1E[0],1E[1],1E[2]);1c=u.D.11.1c(R[0],R[1],R[2],T[0],T[1],T[2],h[j][5]);7[j].E.G(1c.E);7[j].L.G(1c.L);7[j].C.G(1c.C);7[j].H.G(1c.H);7[j].a.G(1c.a);7[j].b.G(1c.b)}16{h[j][3]=W;h[j][4]=W;2t}J;O\'64\':8(1L.q==3&&25.q==3){R=u.D.11.2p(1N[0],1N[1],1N[2]);T=u.D.11.2p(1E[0],1E[1],1E[2]);1c=u.D.11.1c(R[0],R[1],R[2],T[0],T[1],T[2],h[j][5]);7[j].E.G(1c.E);7[j].L.G(1c.L);7[j].C.G(1c.C);7[j].H.G(1c.H);7[j].a.G(1c.a);7[j].b.G(1c.b)}16{h[j][3]=W;h[j][4]=W;2t}J}};c.13.G(\'		<14\'+(!h[j][3]||(h[j][5]&&h[j][5].1v(3)!=24.1v(3))?\' Q="37\'+(4f?\'\':\' 4d\')+\'"\':\'\')+\'>\');c.13.G(\'			<F Q="6a-69">\'+h[j][0]+\'</F><F>\'+(h[j][3]?(h[j][2]?\'&68;= \'+h[j][3]:\'&67;= \'+h[j][3]+\'%\'):\'&#1g;\')+\'</F><F Q="37">\'+(h[j][4]?(h[j][2]?\'&68;= \'+h[j][4]:\'&67;= \'+h[j][4]+\'%\'):\'&#1g;\')+\'</F><F Q="1x 3k">\');3m=[];2u=[];2v=[];B 3l=1s;8(h[j][2].V("2n")<0&&h[j][2].V("4H")<0){U(B k=0;k<h[j][1].q;k++)8(h[j][1].q>1&&41.V(h[j][1].15(\',\'))<0&&h[j][5].1v(3)==24.1v(3)){3m.G(\'<1b Q="1x 3k">&#1g;</1b>\');3l=1e;8(h[j][1][k].q==4)1A=u.D.11.8d(h[j][1][k][0]/ 1k, h[j][1][k][1] /1k,h[j][1][k][2]/ 1k, h[j][1][k][3] /1k,1t);16 1A=[h[j][1][k][0]*2.55,h[j][1][k][1]*2.55,h[j][1][k][2]*2.55];2v.G(\'<1b Q="1x" 1r="2l-11: 19(\'+M.1O(1A[0])+\', \'+M.1O(1A[1])+\', \'+M.1O(1A[2])+\');">&#1g;</1b>\');2u.G(\'<1b Q="1x" 1r="11: 8c; 66: 8b;"><1o 1r="66: 2D;">\\4C</1o>&#1g;</1b>\')}};8(h[j][1].q){U(B k=0;k<h[j][1].q;k++){U(B l=0;l<h[j][1][k].q;l++)8(!3P(h[j][1][k][l]))h[j][1][k][l]=h[j][1][k][l].P(2)}};B 8a=1s;U(B i=0,n=0;i<c.N.q;i++){c.N[i].23=W;c.N[i].2k=W;c.N[i].3e=W;c.N[i].3V=W;c.N[i].5T=W;c.N[i].5S=W;c.N[i].5R=W;c.N[i].5Q=W;c.N[i].3d=W;c.N[i].3U=W;c.N[i].3c=W;c.N[i].3T=W;n++;1K=1D.N[i];I=c.N[i];1I=1s;B 1X=3G(1K,I,o,2T,2S,2R,1s,1N,1E,2D,2C);R=1X.R;T=1X.T;1m=1X.1m;1J=1X.1J;8(h[j][1].q){U(B k=0;k<h[j][1].q;k++){8((h[j][1][k].q==3&&1m.15(\',\')==h[j][1][k].15(\',\'))||(h[j][1][k].q==4&&1J.15(\',\')==h[j][1][k].15(\',\'))){8(h[j][2].V("2n")<0&&h[j][2].V("4H")<0&&41.V(h[j][1].15(\',\'))<0&&h[j][5].1v(3)==24.1v(3)){8(h[j][1].q){3m[k]=(\'<1b Q="1x 3k">\'+n.2W(3X(3W).q)+\'</1b>\');3l=1e}1A=u.D.11.31(R[0],R[1],R[2],"30",1t,1e);1U=u.D.11.31(T[0],T[1],T[2],"30",1t,1e);2v[k]=(\'<1b Q="1x" 1r="2l-11: 19(\'+1A[0]+\', \'+1A[1]+\', \'+1A[2]+\');">&#1g;</1b>\');2u[k]=(\'<1b Q="1x" 1r="2l-11: 19(\'+1U[0]+\', \'+1U[1]+\', \'+1U[2]+\');">&#1g;</1b>\')};1I=1e}}}16 1I=1e;8(1I){1c=u.D.11.1c(R[0],R[1],R[2],T[0],T[1],T[2],h[j][5]);7[j].E.G(1c.E);7[j].L.G(1c.L);7[j].C.G(1c.C);7[j].H.G(1c.H);7[j].a.G(1c.a);7[j].b.G(1c.b);8(I.2g)7[j].g.G(I.2g);8((h[j][1].q||h[j][2].V(\'2n\')>-1||h[j][2].V(\'4H\')>-1)&&(h[j][2].V(\'5U\')<0||I.2g))7[j].1u.G([i,i,n])}};c.13=c.13.2i(3m);B 3W=n;8(!h[j][1].q||((h[j][1][0]==\'65\'||(h[j][1][0]==\'64\'&&25.q==3))&&1L.q==3)||7[j].1u.q>=h[j][1].q)4G(h[j][2]){O 61:7[j].z=u.D.2w(7[j].a);J;O 89:7[j].z=u.D.2L(7[j].a);J;O 88:7[j].z=u.D.2K(7[j].a);J;O 87:7[j].z=u.D.2J(7[j].a);J;O 86:7[j].z=M.1d(u.D.2d(7[j].a)-u.D.1W(7[j].a));J;O 85:7[j].z=u.D.2I(7[j].a);J;O 84:7[j].z=M.1d(u.D.2w(7[j].a))+M.1d(u.D.2w(7[j].b));J;O 60:7[j].z=u.D.2w(7[j].b);J;O 83:7[j].z=u.D.2L(7[j].b);J;O 81:7[j].z=u.D.2K(7[j].b);J;O 80:7[j].z=u.D.2J(7[j].b);J;O 7Z:7[j].z=M.1d(u.D.2d(7[j].b)-u.D.1W(7[j].b));J;O 7Y:7[j].z=u.D.2I(7[j].b);J;O 63:7[j].z=u.D.2w(7[j].E);J;O 7X:7[j].z=u.D.2L(7[j].E);J;O 7W:7[j].z=u.D.2K(7[j].E);J;O 7V:7[j].z=u.D.2J(7[j].E);J;O 7U:7[j].z=M.1d(u.D.2d(7[j].E)-u.D.1W(7[j].E));J;O 7T:7[j].z=u.D.2I(7[j].E);J;O 62:7[j].z=u.D.2w(7[j].L);J;O 7S:7[j].z=u.D.2L(7[j].L);J;O 7R:7[j].z=u.D.2K(7[j].L);J;O 7Q:7[j].z=u.D.2J(7[j].L);J;O 7P:7[j].z=M.1d(u.D.2d(7[j].L)-u.D.1W(7[j].L));J;O 7O:7[j].z=u.D.2I(7[j].L);J;O 5Z:7[j].z=u.D.2w(7[j].C);J;O 7N:7[j].z=u.D.2L(7[j].C);J;O 7M:7[j].z=u.D.2K(7[j].C);J;O 7L:7[j].z=u.D.2J(7[j].C);J;O 7K:7[j].z=M.1d(u.D.2d(7[j].C)-u.D.1W(7[j].C));J;O 7J:7[j].z=u.D.2I(7[j].C);J;O 5Y:7[j].z=u.D.2w(7[j].H);J;O 7I:7[j].z=u.D.2L(7[j].H);J;O 7H:7[j].z=u.D.2K(7[j].H);J;O 7G:7[j].z=u.D.2J(7[j].H);J;O 7F:7[j].z=M.1d(u.D.2d(7[j].H)-u.D.1W(7[j].H));J;O 7E:7[j].z=u.D.2I(7[j].H);J;O 5X:8(7[j].g.q)7[j].z=u.D.2d(7[j].g);J;O 5W:8(7[j].g.q)7[j].z=u.D.1W(7[j].g);J;O 7D:8(7[j].g.q)7[j].z=u.D.2L(7[j].g);J;O 7C:8(7[j].g.q)7[j].z=u.D.2K(7[j].g);J;O 7B:8(7[j].g.q)7[j].z=u.D.2J(7[j].g);J;O 7A:8(7[j].g.q)7[j].z=M.1d(u.D.2d(7[j].g)-u.D.1W(7[j].g));J;O 7z:8(7[j].g.q)7[j].z=u.D.2I(7[j].g);J}16 8(!h[j][1].q||(h[j][1][0]+\'\').V(\'7y\')<0)3i=1e;8(7[j].1u.q){1I=1s;U(B k=0;k<7[j].1u.q;k++){1K=1D.N[7[j].1u[k][0]];I=c.N[7[j].1u[k][1]];4G(h[j][2]){O 63:8(7[j].E[k]==7[j].z)1I=1e;J;O 62:8(7[j].L[k]==7[j].z)1I=1e;J;O 61:8(7[j].a[k]==7[j].z)1I=1e;J;O 60:8(7[j].b[k]==7[j].z)1I=1e;J;O 5Z:8(7[j].C[k]==7[j].z)1I=1e;J;O 5Y:8(7[j].H[k]==7[j].z)1I=1e;J;O 5X:8(7[j].g[k]==7[j].z)1I=1e;J;O 5W:8(7[j].g[k]==7[j].z)1I=1e;J};8(1I){7[j].5V=7[j].1u[k];J}};8(1I){c.13.G(\'<1b Q="1x 3k">\'+7[j].5V[2].2W(3X(3W).q)+\'</1b>\');3l=1e;B 1X=3G(1K,I,o,2T,2S,2R,1e,1N,1E,2D,2C);R=1X.R;T=1X.T;1A=u.D.11.31(R[0],R[1],R[2],"30",1t,1e);1U=u.D.11.31(T[0],T[1],T[2],"30",1t,1e);2v.G(\'<1b Q="1x" 1r="2l-11: 19(\'+1A[0]+\', \'+1A[1]+\', \'+1A[2]+\');">&#1g;</1b>\');2u.G(\'<1b Q="1x" 1r="2l-11: 19(\'+1U[0]+\', \'+1U[1]+\', \'+1U[2]+\');">&#1g;</1b>\')}}8(!2v.q){2v.G(\'<1b Q="1x">&#1g;</1b>\');2u.G(\'<1b Q="1x">&#1g;</1b>\')};8(!3l)c.13.G(\'<1b Q="1x 3k">&#1g;</1b>\');c.13.G(\'			</F>\');c.13.G(\'			<F Q="1x">\'+2v.15(\'\')+\'</F>\');c.13.G(\'			<F Q="1x">\'+2u.15(\'\')+\'</F>\');B 2V=[];8(7[j].z!=W&&h[j][2]&&h[j][2].V("5U")<0){8(!h[j][3]||(h[j][5]&&h[j][5].1v(3)!=24.1v(3)))19=[4F,4F,4F];16{B 19=[0,1t,0],2Z=1t/(h[j][3]+h[j][3]/2);8(M.1d(7[j].z)<=h[j][3]){19[0]+=M.1W(2Z*M.1d(7[j].z),1t);19[1]-=M.1W(2Z*M.1d(7[j].z),1t);B 2Y=M.2d(19[0],19[1]);19[0]*=(1t/2Y);19[1]*=(1t/2Y);19[0]=M.1O(19[0]);19[1]=M.1O(19[1])}16 19=[1t,0,0]};U(B l=0;l<2u.q;l++){2V.G(M.1d(7[j].z).P(2)>0?\'<1o 1r="2f: 5I; 3z: \'+M.1O(10*M.1d(7[j].z).P(2))+\'3y; 2l-11: 19(\'+19.15(\', \')+\'); 2X: 5H 5G 5F; 2X-5E: 27; 2X-5D: 27; 3a: .3Y 0 .3Y 0; 5C: 3x;">&#1g;</1o>\':\'&#1g;\')}};c.13.G(\'			<F><1o Q="\'+(7[j].z!=W&&h[j][3]&&(!h[j][5]||h[j][5].1v(3)==24.1v(3))?((h[j][2]?M.1d(7[j].z).P(2)<h[j][3]:M.1d(7[j].z).P(2)>h[j][3])?\'2s\':(M.1d(7[j].z).P(2)==h[j][3]?\'2F\':\'2G\')):\'37\')+\'">\'+(7[j].z!=W?7[j].3j||7[j].z.P(2):\'&#1g;\')+\'</1o></F><F Q="5B">\'+(2V.15(\'\')||\'&#1g;\')+\'</F><F Q="\'+(7[j].z!=W&&(!h[j][3]||(h[j][2]?M.1d(7[j].z)<=h[j][3]:M.1d(7[j].z)>=h[j][3]))?(((h[j][2]?M.1d(7[j].z).P(2)<h[j][3]:M.1d(7[j].z).P(2)>h[j][3])?\'2s">4E <1o Q="2H">✔</1o>\':(7[j].z!=W&&h[j][3]?\'2F">4E \\7x\':\'37">\'))+\'<1o Q="\'+(h[j][4]&&(h[j][2]?M.1d(7[j].z)<=h[j][4]:M.1d(7[j].z)>=h[j][4])?\'2H\':\'3x\')+(h[j][4]?\'">✔\':\'">&#1g;\')):\'2G">\'+(7[j].z!=W?\'7w 4E\':\'\')+\' <1o Q="2H">\\4C\')+\'</1o></F>\');c.13.G(\'		</14>\');8(h[j][1]&&h[j][1].q>1&&h[j][5].1v(3)==24.1v(3))41.G(h[j][1].15(\',\'))};c.13.G(\'	</2B>\');B 4D,3g;U(B j=0;j<7.q;j++){8(!h[j][5]||h[j][5].1v(3)==24.1v(3)){8(!h[j][3])2t;8(3i||3P(7[j].z)||(h[j][2]?M.1d(7[j].z)>h[j][3]:M.1d(7[j].z)<h[j][3]))4D=1s;8(!h[j][4])2t;8(3i||3P(7[j].z)||(h[j][2]?M.1d(7[j].z)>h[j][4]:M.1d(7[j].z)<h[j][4]))3g=1s}8(h[j][5]&&h[j][5].1v(3)==24.1v(3))U(B k=0;k<7[j].1u.q;k++){8(h[j][2].V(\'7v\')>-1){c.N[7[j].1u[k][1]].23=M.1d(h[j][2].V(\'2n\')<0?7[j].z:7[j].E[k]);c.N[7[j].1u[k][1]].2k=h[j][3]}16 8(h[j][2].V(\'7u\')>-1){c.N[7[j].1u[k][1]].3e=M.1d(h[j][2].V(\'2n\')<0?7[j].z:7[j].L[k]);c.N[7[j].1u[k][1]].3V=h[j][3]}16 8(h[j][2].V(\'7t\')>-1){c.N[7[j].1u[k][1]].5T=M.1d(h[j][2].V(\'2n\')<0?7[j].z:7[j].a[k]);c.N[7[j].1u[k][1]].5S=h[j][3]}16 8(h[j][2].V(\'7s\')>-1){c.N[7[j].1u[k][1]].5R=M.1d(h[j][2].V(\'2n\')<0?7[j].z:7[j].b[k]);c.N[7[j].1u[k][1]].5Q=h[j][3]}16 8(h[j][2].V(\'7r\')>-1){c.N[7[j].1u[k][1]].3d=M.1d(h[j][2].V(\'2n\')<0?7[j].z:7[j].C[k]);c.N[7[j].1u[k][1]].3U=h[j][3]}16 8(h[j][2].V(\'7q\')>-1){c.N[7[j].1u[k][1]].3c=M.1d(h[j][2].V(\'2n\')<0?7[j].z:7[j].H[k]);c.N[7[j].1u[k][1]].3T=h[j][3]}}};c.13.G(\'<1b Q="7p"><p><1o Q="\'+(4D!==1s?\'2s"><1o Q="2H">✔</1o> \'+1l.7o:\'2G"><1o Q="2H">\\4C</1o> \'+(3i?\'7n 7m\':1l.7l))+\'</1o>\'+((3g!==1s&&1l.5P)||(3g===1s&&1l.5O)?\'<3h /><1o Q="\'+(3g!==1s?\'2s"><1o Q="2H">✔</1o> \'+1l.5P:\'2j"><1o Q="2H">✘</1o> \'+1l.5O)+\'</1o>\':\'\')+\'</p>\');c.7k=c.13.2M(5N);c.13.G(\'	</1b>\');c.13.G(\'	<1b Q="40">\');c.13.G(\'	<33 4B="1h.26(\\\'40\\\').1r.2f = 1h.26(\\\'40\\\').1r.2f != \\\'27\\\' ? \\\'27\\\' : \\\'\\\'">7j</33>\');c.13.G(\'	<2B 4A="0" 1p="40">\');c.13.G(\'		<14>\');c.13.G(\'			<A>#</A><A 32="\'+1q.2M(4y,4x+1).q+\'">5M 4z</A><A 32="\'+(1l.1q.15(\',\').V(\'2c\')<0?\'4\':\'3\')+\'">5L 4z</A><A 32="2">&#1g;</A><A 32="\'+(1l.1q.15(\',\').V(\'2c\')<0?\'4\':\'3\')+\'">3Z 4z</A><A 32="4">ΔE*\'+24.1v(3)+\'</A><A>&#1g;</A>\');c.13.G(\'		</14>\');c.13.G(\'		<14>\');8(1F==\'5K\')22=\'L*,a*,b*\';16 8(1F==\'3f\')22=\'X,Y,Z\';16 8(1F==\'4w\')22=\'x,y,Y\';c.13.G(\'			<A>&#1g;</A><A>\'+1q.2M(4y,4x+1).15(\'</A><A>\').1H(/\\w+7i/g,\'\')+\'</A><A>\'+22.1M(\',\').15(\'</A><A>\')+\'</A>\'+(1l.1q.15(\',\').V(\'2c\')<0?\'<A>γ</A>\':\'\')+\'<A>&#1g;</A><A>&#1g;</A><A>\'+22.1M(\',\').15(\'</A><A>\')+\'</A>\'+(1l.1q.15(\',\').V(\'2c\')<0?\'<A>γ</A>\':\'\')+\'<A>ΔL*</A>\'+\'<A>ΔC*</A><A>ΔH*</A><A>ΔE*</A><A>&#1g;</A>\');c.13.G(\'		</14>\');U(B i=0,n=0;i<c.N.q;i++){n++;1K=1D.N[i];I=c.N[i];B 1X=3G(1K,I,o,2T,2S,2R,1e,1N,1E,2D,2C);R=1X.R;T=1X.T;1m=1X.1m;1J=1X.1J;1A=u.D.11.31(R[0],R[1],R[2],"30",1t,1e);1U=u.D.11.31(T[0],T[1],T[2],"30",1t,1e);1c=u.D.11.1c(R[0],R[1],R[2],T[0],T[1],T[2],24);8(1F==\'5K\'){1V=R;1T=T;P=2}16 8(1F==\'3f\'||1F==\'4w\'){1V=u.D.11.2Q(R[0],R[1],R[2]);1T=u.D.11.2Q(T[0],T[1],T[2]);8(1F==\'4w\'){1V=u.D.11.5J(1V[0],1V[1],1V[2]);1T=u.D.11.5J(1T[0],1T[1],1T[2]);P=4}16{1V=[1V[0]*1k,1V[1]*1k,1V[2]*1k];1T=[1T[0]*1k,1T[1]*1k,1T[2]*1k];P=2}}c.13.G(\'		<14\'+(i==c.N.q-1?\' Q="7h-7g"\':\'\')+\'>\');B 2V=[],19=[0,1t,0];8(I.2k==W)I.2k=5;8(I.23==W)I.23=1c.E;B 2Z=1t/(I.2k+I.2k/2);8(I.23<=I.2k){19[0]+=M.1W(2Z*I.23,1t);19[1]-=M.1W(2Z*I.23,1t);B 2Y=M.2d(19[0],19[1]);19[0]*=(1t/2Y);19[1]*=(1t/2Y);19[0]=M.1O(19[0]);19[1]=M.1O(19[1])}16 19=[1t,0,0];2V.G(I.23.P(2)>0?\'<1o 1r="2f: 5I; 3z: \'+M.1O(10*I.23.P(2))+\'3y; 2l-11: 19(\'+19.15(\', \')+\'); 2X: 5H 5G 5F; 2X-5E: 27; 2X-5D: 27; 3a: .3Y 0 .3Y 0; 5C: 3x;">&#1g;</1o>\':\'&#1g;\');8(1l.1q.15(\',\').V(\'2c\')>-1)B 2m=1J;16{B 2m=1m;U(B j=0;j<2m.q;j++)2m[j]=M.1O(2m[j]*2.55)}c.13.G(\'			<F>\'+n.2W(3X(3W).q)+\'</F><F>\'+2m.15(\'</F><F>\')+\'</F><F>\'+1V[0].P(P)+\'</F><F>\'+1V[1].P(P)+\'</F><F>\'+1V[2].P(P)+\'</F>\'+(1l.1q.15(\',\').V(\'2c\')<0?\'<F>\'+(1K.2g?1K.2g.P(2):\'&#1g;\')+\'</F>\':\'\')+\'<F Q="1x" 1r="2l-11: 19(\'+1A[0]+\', \'+1A[1]+\', \'+1A[2]+\');"><1b Q="1x">&#1g;</1b></F><F Q="1x" 1r="2l-11: 19(\'+1U[0]+\', \'+1U[1]+\', \'+1U[2]+\');"><1b Q="1x">&#1g;</1b></F><F>\'+1T[0].P(P)+\'</F><F>\'+1T[1].P(P)+\'</F><F>\'+1T[2].P(P)+\'</F>\'+(1l.1q.15(\',\').V(\'2c\')<0?\'<F>\'+(I.2g?I.2g.P(2):\'&#1g;\')+\'</F>\':\'\')+\'<F Q="\'+(I.3e!=W?(I.3e.P(2)<I.3V?\'2s\':(I.3e.P(2)==I.3V?\'2F\':\'2G\')):\'2j\')+\'">\'+1c.L.P(2)+\'</F>\'+\'<F Q="\'+(I.3d!=W?(I.3d.P(2)<I.3U?\'2s\':(I.3d.P(2)==I.3U?\'2F\':\'2G\')):\'2j\')+\'">\'+1c.C.P(2)+\'</F><F Q="\'+(I.3c!=W?(I.3c.P(2)<I.3T?\'2s\':(I.3c.P(2)==I.3T?\'2F\':\'2G\')):\'2j\')+\'">\'+1c.H.P(2)+\'</F><F Q="\'+(I.23!=W?(I.23.P(2)<I.2k?\'2s\':(I.23.P(2)==I.2k?\'2F\':\'2G\')):(1c.E<4v?\'2j\':\'2F\'))+\'">\'+1c.E.P(2)+\'</F><F Q="5B">\'+2V.15(\'\')+\'</F>\');c.13.G(\'		</14>\')};c.13.G(\'	</2B>\');c.13.G(\'	</1b>\');17 c.13.15(\'\\n\')};18 2q(1i){17 1i.1H(/^\\s+|\\s+$/g,"")};18 5A(1i){17 1i.1H(/\\r\\n/g,"\\r").1H(/\\n/g,"\\r")};18 4t(1i){17 1i.1H(/\\r\\n/g,"\\n").1H(/\\r/g,"\\n")};18 5x(1i,5z){1i=2q(1i).1H(/\\n\\s+|\\s+\\n/g,"\\n");17 5z?1i.1H(/\\s+/g," "):1i};18 5y(1i){17 2U(1i)};18 2U(1i,3S,3R){8(!3S)3S="\\\\,";8(!3R)3R=".";17 1i.1H(2P 7f("((^|\\\\s)\\\\-?\\\\d+)"+3S+"(\\\\d+(\\\\s|$))","g"),"$1"+3R+"$3")};18 4u(1i,3N){1i=5y(5x(4t(1i)));8(!1i)17[];8(3N){1i=1i.1M(/\\s/)}16{1i=1i.1M("\\n");U(B i=0;i<1i.q;i++){1i[i]=1i[i].1M(/\\s+/);U(B j=0;j<1i[i].q;j++){4s=3Q(1i[i][j]);8(!3P(4s))1i[i][j]=4s}}};17 1i};18 3O(2r,3N){2r=2r.4r();8(3N)17 2r.15("\\t");U(B i=0;i<2r.q;i++)2r[i]=2r[i].15("\\t");17 2r.15("\\n")};18 7e(1C){B f=1h.1Q,e=f[\'21\'].1j,7d,i,j,v,s;8(!2q(f["29"].1j["3r"].1a)||!2q(f["29"].1j["3s"].1a))17;8(!5k(1C)){8(1C=="r"||!1C){8(2q(f[\'29\'].1j[\'3s\'].1a)){8(!1D.1f.q)2N("4n N: 3M 3L 3K N 5w.");16 8(!1D.N.q)2N("4n N: 3M 3L 3K 4k.")}};8(1C=="i"||!1C){8(2q(f[\'29\'].1j[\'3r\'].1a)){8(!1S.1f.q)2N("4o N: 3M 3L 3K N 5w.");16 8(!1S.N.q)2N("4o N: 3M 3L 3K 4k.")}}};B 2E=[];U(B 1p 4p 1w){8(1w[1p]&&1w[1p].1y&&2E.V(1w[1p])<0){U(B i=0;i<1w[1p].1q.q;i++){8(1D.1f.V(1w[1p].1q[i])<0)J;16 8(1q.V(1w[1p].1q[i])<0)1q.G(1w[1p].1q[i])};8(i==1w[1p].1q.q){2E.G(1w[1p])}}};U(B i=0;i<2E.q;i++){e[\'3J\'].7c[i]=2P 7b(2E[i].1y,2E[i].1p);8(1D.1p==2E[i].1p)e[\'3J\'].5v=i};B 1l=1w[e[\'3J\'].1a],4q=1q.2M().2i(1l.5u),2h=1q.2M().2i(1l.5u);U(i=0;i<2h.q;i++){U(j=0;j<1S.1f.q;j++){8(1S.1f[j]==2h[i]){1z.G(j);J}}};U(i=0;i<4q.q;i++){U(j=0;j<1D.1f.q;j++){8(1D.1f[j]==4q[i]){3F.G(j);J}}};8(1S.N.q&&1D.N.q&&1S.N.q!=1D.N.q){3C("7a 79 78 77 4p 76 5o 5n N.");17 1s};B 3I=[],3H=[],3b="";U(i=0;i<2h.q;i++){8(1S.1f.V(2h[i])<0)3I.G(2h[i]);8(1D.1f.V(2h[i])<0)3H.G(2h[i])};8(3I.q){3b+="4o N 5t 5s 5r 5q 5p: "+3I.15(", ")+".\\n"}8(3H.q){3b+="4n N 5t 5s 5r 5q 5p: "+3H.15(", ")+".\\n"};8(3b){3C(3b+"75 5o 5n N 74 73 72: "+2h.15(", "));17};8(1D.1f.q&&1D.N.q&&1S.1f.q&&1S.N.q){5j()}};18 3G(1K,I,o,2T,2S,2R,5l,1N,1E,2D,2C){B R,T,1m,1J=[];R=[1K[3F[o+1]],1K[3F[o+2]],1K[3F[o+3]]];T=[I[1z[o+1]],I[1z[o+2]],I[1z[o+3]]];8(2T&&!2S){R=u.D.11.2p(R[0],R[1],R[2]);T=u.D.11.2p(T[0],T[1],T[2])}8(1q.15(\',\').V(\'4m\')==0){1m=[I[1z[0]],I[1z[1]],I[1z[2]]];8(1q.15(\',\').V(\'2c\')>-1)1J=[I[1z[3]],I[1z[4]],I[1z[5]],I[1z[6]]]}16{1m=[I[1z[4]],I[1z[5]],I[1z[6]]];8(1q.15(\',\').V(\'2c\')>-1)1J=[I[1z[0]],I[1z[1]],I[1z[2]],I[1z[3]]]}U(B l=0;l<1m.q;l++)1m[l]=1m[l].P(2);U(B l=0;l<1J.q;l++)1J[l]=1J[l].P(2);8(1m[0]==1m[1]&&1m[1]==1m[2]){8(2R){R[0]=T[0];R[1]=R[2]=0}}8(2D){B 2b=u.D.11.2Q(R[0],R[1],R[2],W,1k.0);2b=u.D.11.5m(2b[0],2b[1],2b[2],[96.42,1k,82.49],1N,2C);R=u.D.11.2p(2b[0],2b[1],2b[2]);B 2a=u.D.11.2Q(T[0],T[1],T[2],W,1k.0);2a=u.D.11.5m(2a[0],2a[1],2a[2],[96.42,1k,82.49],1E,2C);T=u.D.11.2p(2a[0],2a[1],2a[2])}8(1m[0]==1m[1]&&1m[1]==1m[2]){8(!5l&&!1J.q&&1m[0]>0&&1m[0]<1k&&R[0]>0&&T[0]>0){B 2b=u.D.11.2Q(R[0],R[1],R[2]),2a=u.D.11.2Q(T[0],T[1],T[2]);1K.2g=M.3E(2b[1])/M.3E(1m[0]/1k);I.2g=M.3E(2a[1])/M.3E(1m[0]/1k)}}17{R:R,T:T,1m:1m,1J:1J}};18 5k(1C){B f=1h.1Q;8(1C=="r"||!1C){1D=2P 3D(f["29"].1j["3s"].1a)};8(1C=="i"||!1C){1S=2P 3D(f["29"].1j["3r"].1a)};8(1C=="r"||!1C){8(!1D.1f.q)17 1s;8(!1D.N.q)17 1s};8(1C=="i"||!1C){8(!1S.1f.q)17 1s;8(!1S.N.q)17 1s};17 1e};18 5j(3B){4h(W,1e);B 71=1h.1Q["21"].1j,4l=1h.1Q["29"].1j;8(4l["5i"])70{6Z(4l["5i"].1a);1B.1w=1w;8(1B.6Y.6X.V("?6W")>-1)3C("6V 1l: "+(1w.5h?1w.5h():1w))}6U(e){3C("6T 6S 6R:\\n"+e+"\\6Q 6P 4k.")};B 3A=1S.5g(3B);1h.26(\'7\').6O=3A;4c();1h.26(\'6N\').1r.5f="5e";1h.26(\'3A\').1r.5f="5e";4h(W,1s);17 1e};18 4c(){B 3a=10,4i=4,6M=20,39=(1h.26("3A").4j||6L)-3a*2-4i*2,2O=1h.4e("2B");U(B i=0;i<2O.q;i++){8(2O[i].4j>39){39=2O[i].4j;1h.6K.1r.3z=(39+3a*2+4i*2)+\'3y\'}}U(B i=0;i<2O.q;i++)2O[i].1r.3z=39+\'3y\'}18 3u(1G,1n){8(!1G||1G.6J||1G.5d=="3x"||1G.5d=="6I"||u.1R.2z(1G,"Q","6H")||u.1R.2z(1G,"Q","6G")||u.1R.2z(1G,"Q","6F"))17;8(1G.1y=="3w")1n=1G.1n;1n=1n?"1n":"";1G.1n=1n;8(1n&&!u.1R.2z(1G,"Q","1n"))u.1R.58(1G,"Q","1n");16 8(!1n&&u.1R.2z(1G,"Q","1n"))u.1R.59(1G,"Q","1n");B 22=1h.4e("6E");U(B i=0;i<22.q;i++)8(u.1R.5c(22[i],"U")==1G.1p){8(u.1R.5c(22[i],"U")=="4g")22[i].1r.2f=1B.5b?"6D":"27";22[i].6C=1n;22[i].1n=1n}};18 4h(3v,1n){1n=1n?"1n":"";8(3v)U(B j=0;j<3v.1j.q;j++)3u(3v.1j[j],1n);16{U(B i=0;i<1h.1Q.q;i++){U(B j=0;j<1h.1Q[i].1j.q;j++){8(1h.1Q[i].1j[j].1y=="4g")3u(1h.1Q[i].1j[j],1n||!1B.5b);16 3u(1h.1Q[i].1j[j],1n)}}}};18 6B(){B 4f=1h.1Q[\'21\'].1j[\'5a\'].38,2A=1h.26("2A"),36=2A.4e("14");U(B i=0;i<36.q;i++){8(u.1R.2z(36[i],"Q","37"))(u.1R.2z(36[i],"Q","4d")?u.1R.59:u.1R.58)(36[i],"Q","4d")}4c()};18 2N(2o,3t){8(3t)1B.57+=2o;16 1B.57=2o};18 6A(2o,54,56){B p=M.6z(1k/56*54);2N(2o+p+"% "+"|".53(p/2))};18 52(35){17 35.1M(/[\\/\\\\]/).6y()};18 51(35){B 4a=35.4b(/(^.+)(\\.\\w+)$/);17 4a?4a.2M(1):[35,W]};18 6x(1C){B e=1h.1Q[\'29\'].1j;8(1C==\'6w\')B f=\'3s\';16 B f=\'3r\';B 3q=1B.50();3q.1h.50(\'6v/6u\');3q.1h.6t(e[f].1a);3q.1h.6s()};',62,596,'|||||||result|if||||this|||||rules|||||||||length||||jsapi|||||sum|th|var||math||td|push||actual|break|||Math|data|case|accuracy|class|target_Lab||actual_Lab|for|indexOf|null|||||color|header|report_html|tr|join|else|return|function|rgb|value|div|delta|abs|true|data_format|160|document|txt|elements|100|criteria|current_rgb|disabled|span|id|fields_match|style|false|255|matches|substr|comparison_criteria|patch|name|fields_extract_indexes_i|target_rgb|window|which|data_ref|wp_norm|mode|form_element|replace|matched|current_cmyk|target|wp|split|profile_wp_norm|round|src|forms|dom|data_in|actual_color|actual_rgb|target_color|min|colors|CAL_RGBLEVELS|toUpperCase||F_out|labels|actual_DE|delta_calc_method|profile_wp|getElementById|none|bp|F_data|actual_XYZ|target_XYZ|CMYK|max|wp_assumed|display|gamma|fields_extract_i|concat|info|tolerance_DE|background|device|_MAX|str|XYZ2Lab|trim|array|ok|continue|actual_rgb_html|target_rgb_html|absmax|CAL_ENTRYCOUNT|indexof|attributeHasWord|summary|table|cat|absolute|_criteria|warn|ko|checkmark|stddev|mad|median|avg|slice|set_status|tables|new|Lab2XYZ|gray_balance_cal_only|no_XYZ|no_Lab|decimal|bar_html|fill|border|maxrg|step|D50|Lab2RGB|colspan|h3|now|path|trs|statonly|checked|maxwidth|padding|errortxt|actual_DH|actual_DC|actual_DL|XYZ|overachieve|br|missing_data|htmlsum|sample_id|haspatchid|patch_number_html|colortemp_assumed|prototype|data_begin|win|FF_data_in|FF_data_ref|append|form_element_set_disabled|form|FF_delta_calc_method|hidden|px|width|report|set_delta_calc_method|alert|dataset|log|fields_extract_indexes_r|get_colors|data_ref_format_missing_fields|data_in_format_missing_fields|FF_criteria|invalid|or|No|level|fromarray|isNaN|parseFloat|re|sr|tolerance_DH|tolerance_DC|tolerance_DL|number_of_sets|String|125em|Measured|overview|seen||colortemp|profile_wp_norm_round|profile_wp_round|header_set_field|data_end|ln||test|match|layout|verbose|getElementsByTagName|verbosestats|FF_gray_balance_cal_only|form_elements_set_disabled|borderwidth|offsetWidth|values|fe2|RGB|Reference|Measurement|in|fields_extract_r|clone|parsed|cr2lf|toarray|warn_deviation|xyY|devend|devstart|Values|cellspacing|onclick|u2716|pass|OK|204|switch|_MIN|cal_graylevels|testchart|wp_assumed_round|planckian|whitepoint|wp_norm_round|wp_round|profile_colortemp|END_|BEGIN_|_data_regexp2|_data_regexp1|_header_regexp2|_data_format_regexp|while|ipart|fpart|constructor|open|splitext|basename|repeat|cur_num||max_num|status|attributeAddWord|attributeRemoveWord|FF_verbosestats|CRITERIA_GRAYSCALE|attribute|type|visible|visibility|generate_report|toSource|FF_variables|compare|get_data|skip_gamma|adapt|reference|and|fields|following|the|missing|is|fields_compare|selectedIndex|format|compact|comma2point|collapse_whitespace|lf2cr|bar|overflow|bottom|top|silver|solid|1px|block|XYZ2xyY|Lab|Nominal|Device|result_start|failrecommendedtext|passrecommendedtext|tolerance_Db|actual_Db|tolerance_Da|actual_Da|GAMMA|finalmatch|GAMMA_MIN|GAMMA_MAX|DELTA_H_MAX|DELTA_C_MAX|DELTA_B_MAX|DELTA_A_MAX|DELTA_L_MAX|DELTA_E_MAX|WHITEPOINT_MvsP|WHITEPOINT_MvsA|position|gt|lt|column|first|Date|FF_adaption|cd|luminance|CCT|normalized|Profile|FF_correction_matrix|XYZ2CorColorTemp|NUMBER_OF_FIELDS|header_get|header_set_date|_header_regexp1|search|Object|Array|ignore_case|close|write|plain|text|ref|plaintext|pop|ceil|set_progress|togglestats|className|inline|label|delete|save|fakefile|file|readOnly|body|900|margin|reporttitle|innerHTML|default|nUsing|variable|parsing|Error|catch|Comparsion|debug|href|location|eval|try|fe|atleast|contain|must|Measurements|measurements|sets|of|amount|Different|Option|options|fv|analyze|RegExp|row|last|_|Overview|result_html|failtext|DATA|MISSING|passtext|footer|_H_|_C_|_B_|_A_|_L_|_E_|NOT|u26a0|LEVELS|GAMMA_STDDEV|GAMMA_RANGE|GAMMA_MAD|GAMMA_MED|GAMMA_AVG|DELTA_H_STDDEV|DELTA_H_RANGE|DELTA_H_MAD|DELTA_H_MED|DELTA_H_AVG|DELTA_C_STDDEV|DELTA_C_RANGE|DELTA_C_MAD|DELTA_C_MED|DELTA_C_AVG|DELTA_L_STDDEV|DELTA_L_RANGE|DELTA_L_MAD|DELTA_L_MED|DELTA_L_AVG|DELTA_E_STDDEV|DELTA_E_RANGE|DELTA_E_MAD|DELTA_E_MED|DELTA_E_AVG|DELTA_B_STDDEV|DELTA_B_RANGE|DELTA_B_MAD|DELTA_B_MED||DELTA_B_AVG|DELTA_A_B_RANGE|DELTA_A_STDDEV|DELTA_A_RANGE|DELTA_A_MAD|DELTA_A_MED|DELTA_A_AVG|silent|relative|red|CMYK2RGB|CAL_GRAYLEVELS|CAL_BLUELEVELS|CAL_GREENLEVELS|CAL_REDLEVELS|Result|Actual|Recommended|Criteria|Summary|FF_datetime|Evaluation|adaption|Chromatic|Testchart|None|SIMULATION_PROFILE|profile|Simulation|Contrast|black|daylight|blackbody|Assumed|FF_profile|matrix|Correction|FF_instrument|Instrument|FF_display|Information|Basic|CIEDCorColorTemp2XYZ|planckianCT2XYZ|XYZ_Z|XYZ_Y|XYZ_X|LAB_B|LAB_A|LAB_L|FF_absolute|FF_mode|FF_whitepoint_normalized|FF_whitepoint|FF_blackpoint|FF_profile_whitepoint_normalized|FF_profile_whitepoint|FF_planckian|lock_delta_calc_method|CIE00|CIE94|CIE76|nEND_DATA|nBEGIN_DATA|nNUMBER_OF_SETS||nEND_DATA_FORMAT|nBEGIN_DATA_FORMAT|toString|splice|overwrite|KEYWORD|NUMBER_OF_SETS|header_set_defaults|getMinutes|getHours|Time|getFullYear|getDate|getMonth|CREATED|header_set|CMYK_K|CMYK_Y|CMYK_M|CMYK_C|substring|gi|sEND_DATA|BEGIN_DATA|END_DATA_FORMAT|BEGIN_DATA_FORMAT|FF_testchart|lead|toFixed|pow|Number'.split('|'),0,{}))
+/*]]>*/</script>
+	<script type="text/javascript" >/*<![CDATA[*/
+eval(function(p,a,c,k,e,d){e=function(c){return(c<a?"":e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp("\\b"+e(c)+"\\b","g"),k[c])}}return p}('N M=\'M\',L=\'L\',K=\'K\',J=\'J\',I=\'I\',H=\'H\',G=\'G\',F=\'F\',E=\'E\',D=\'D\',C=\'C\',B=\'B\',A=\'A\',z=\'z\',y=\'y\',x=\'x\',w=\'w\',v=\'v\',u=\'u\',t=\'t\',s=\'s\',r=\'r\',q=\'q\',p=\'p\',o=\'o\',n=\'n\',m=\'m\',l=\'l\',k=\'k\',j=\'j\',i=\'i\',h=\'h\',g=\'g\',f=\'f\',e=\'e\',d=\'d\',c=\'c\',b=\'b\',a=\'a\',9=\'9\',8=\'8\',7=\'7\',6=\'6\',5=\'5\',4=\'4\',3=\'3\',2=\'2\',1=\'1\',0=\'0\';',50,50,'CMC21|CMC11|CIE00|CIE94|CIE76|GAMMA_STDDEV|GAMMA_RANGE|GAMMA_MAD|GAMMA_MED|GAMMA_AVG|GAMMA_MIN|GAMMA_MAX|DELTA_H_STDDEV|DELTA_H_RANGE|DELTA_H_MAD|DELTA_H_MED|DELTA_H_AVG|DELTA_H_MAX|DELTA_C_STDDEV|DELTA_C_RANGE|DELTA_C_MAD|DELTA_C_MED|DELTA_C_AVG|DELTA_C_MAX|DELTA_L_STDDEV|DELTA_L_RANGE|DELTA_L_MAD|DELTA_L_MED|DELTA_L_AVG|DELTA_L_MAX|DELTA_E_STDDEV|DELTA_E_RANGE|DELTA_E_MAD|DELTA_E_MED|DELTA_E_AVG|DELTA_E_MAX|DELTA_B_STDDEV|DELTA_B_RANGE|DELTA_B_MAD|DELTA_B_MED|DELTA_B_AVG|DELTA_B_MAX|DELTA_A_B_RANGE|DELTA_A_STDDEV|DELTA_A_RANGE|DELTA_A_MAD|DELTA_A_MED|DELTA_A_AVG|DELTA_A_MAX|var'.split('|'),0,{}))
+/*]]>*/</script>
+	<script type="text/javascript">
+	//<![CDATA[
+	var CAL_ENTRYCOUNT = 256,
+		CAL_RGBLEVELS = [236, 236, 237],
+		CRITERIA_GRAYSCALE = null,
+		SIMULATION_PROFILE = "";
+	//]]>
+	</script>
+	<script type="text/javascript" >/*<![CDATA[*/
+eval(function(p,a,c,k,e,d){e=function(c){return(c<a?"":e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp("\\b"+e(c)+"\\b","g"),k[c])}}return p}('1s 2d=[["S R. 1O 1N Q ΔE*k",[\'1M\'],l,c,c,j],["S R. 1O 1N Q ΔE*q",[\'1M\'],l,c,c,w],["S R. 1O 1N Q ΔE*h",[\'1M\'],l,c,c,d],["S R. 1L Q ΔE*k",[\'1K\'],l,c,c,j],["S R. 1L Q ΔE*q",[\'1K\'],l,c,c,w],["S R. 1L Q ΔE*h",[\'1K\'],l,c,c,d],["1J ΔE*k",[],1I,c,c,j],["1J ΔE*q",[],1I,c,c,w],["1J ΔE*h",[],1I,c,c,d],["1H ΔE*k",[],l,c,c,j],["1H ΔE*q",[],l,c,c,w],["1H ΔE*h",[],l,c,c,d],["P ΔE*k",[],1G,c,c,j],["P ΔE*q",[],1G,c,c,w],["P ΔE*h",[],1G,c,c,d],["P 1k G ΔE*k",[],1F,c,c,j],["P 1k G ΔE*q",[],1F,c,c,w],["P 1k G ΔE*h",[],1F,c,c,d],["1E G ΔE*k",[],1D,c,c,j],["1E G ΔE*q",[],1D,c,c,w],["1E G ΔE*h",[],1D,c,c,d],["1o 2T 1n 1m",[\'2S\'],\'\',c,1l],["1o 2R 1n 1m",[\'2Q\'],\'\',c,1l],["1o 2P 1n 1m",[\'2O\'],\'\',c,1l],["1o 2N 1n 1m",[\'2M\'],\'\',c,1l]],e=2d.X();e[0][3]=2;e[0][4]=1;e[1][3]=2;e[1][4]=1;e[2][3]=2;e[2][4]=1;e[6][3]=3;e[6][4]=1.5;e[7][3]=1.5;e[7][4]=1;e[8][3]=1.5;e[8][4]=1;e[9][3]=6;e[9][4]=4;e[10][3]=4;e[10][4]=3;e[11][3]=4;e[11][4]=3;1s 1p=e.14([["I p",[],2L],["I 2K",[],2J],["I 1j",[],2I],["I V",[],2H],["I 2c",[],2G],["I 2c 1k G",[],2F],["I 2E G",[],2D]]),1P=1p.14([["g s r (>= 1% x) V ΔC*k",u.t,1C,1.0,0.5,j],["g s r (>= 1% x) 1B Δa*k 1A Δb*k 1j",u.t,1z,2.0,1.5,j],["g s r (>= 1% x) p ΔC*k",u.t,1y,c,c,j],["g s r (>= 1% x) V ΔC*q",u.t,1C,1.0,0.5,w],["g s r (>= 1% x) 1B Δa*q 1A Δb*q 1j",u.t,1z,2.0,1.5,w],["g s r (>= 1% x) p ΔC*q",u.t,1y,c,c,w],["g s r (>= 1% x) V ΔC*h",u.t,1C,1.0,0.5,d],["g s r (>= 1% x) 1B Δa*h 1A Δb*h 1j",u.t,1z,2.0,1.5,d],["g s r (>= 1% x) p ΔC*h",u.t,1y,c,c,d]]),15=e.X(),1Z={1i:[\'1h\',\'1g\',\'1f\'],K:"2C",1e:"D n B",1d:"D n 1c",1b:"1a n B",18:c,U:d,17:2b,16:5,y:e},1Y={Y:[\'1x\',\'1w\',\'1v\',\'1u\'],1i:[\'1h\',\'1g\',\'1f\'],T:"A",K:"A",1q:"A",1e:"D n B",1d:"D n 1c",1b:"1a n B",18:c,U:d,17:2b,16:5,y:15},z={Y:[\'1x\',\'1w\',\'1v\',\'1u\'],1i:[\'1h\',\'1g\',\'1f\'],T:"1X",K:"2B 2A 2z 2y",1e:"D n B",1d:"D n 1c",1b:"1a n B",18:c,U:d,17:26,16:3,y:15.14([["13 Z ΔL*h",[[0,0,0,0]],2a,2,1,d],["13 Z Δa*h",[[0,0,0,0]],29,1,.5,d],["13 Z Δb*h",[[0,0,0,0]],28,2,1,d],["A 1t p ΔE*h",[[m,0,0,0],[0,m,0,0],[0,0,m,0],[0,0,0,m]],l,7,3,d],["N O% M ΔE*h",[[O,o,o,0]],l,1.5,0.W,d],["N M p ΔL*h",[[3.1,2.2,2.2,0],[10.2,7.4,7.4,0],[25,19,19,0],[O,o,o,0],[W,F,F,0]],2a,2,1,d],["N M p Δa*h",[[3.1,2.2,2.2,0],[10.2,7.4,7.4,0],[25,19,19,0],[O,o,o,0],[W,F,F,0]],29,1,.5,d],["N M p Δb*h",[[3.1,2.2,2.2,0],[10.2,7.4,7.4,0],[25,19,19,0],[O,o,o,0],[W,F,F,0]],28,1,.5,d],["N M p ΔE*h",[[3.1,2.2,2.2,0],[10.2,7.4,7.4,0],[25,19,19,0],[O,o,o,0],[W,F,F,0]],l,2,1,d]])},21={Y:[\'1x\',\'1w\',\'1v\',\'1u\'],1i:[\'1h\',\'1g\',\'1f\'],1e:"D n B",1d:"D n 1c",1b:"1a n B",18:c,U:j,17:26,16:5,y:15.14([["13 Z ΔE*k",[[0,0,0,0]],l,3,1,j],["A 1t p ΔE*k",[[m,0,0,0],[0,m,0,0],[0,0,m,0],[0,0,0,m]],l,5,3,j],["A 1t p ΔH*k",[[m,0,0,0],[0,m,0,0],[0,0,m,0],[0,0,0,m]],2x,2.5,1.5,j],["N M V ΔH*k",[[m,24,24,0],[2w,23,23,0],[2v,22,22,0],[o,27,27,0],[20,12,12,0],[10,6,6,0]],2u,1.5,0.5,j]])},v=21,f={g:1Z.X(),A:1Y,1U:v,1X:z};f[\'2t\']=v;2s(1s i=27;i<=2r;i++){f[\'2q\'+i+\'1W\']=v;f[\'2p\'+i+\'1W\']=v;f[\'1V\'+i+\'2o\']=v;f[\'1V\'+i+\'2n\']=v};f[\'2m\']=z;f[\'2l-1r\']=z;f[\'2k-1r\']=z;f[\'2j-1r\']=z;v.T=\'1U\';v.K="1T 1S 1R 1Q";v.1q="2i/1T 1S 1R A 1Q.0";z.y[8][3]=2;z.y[11][3]=6;f.g.T=\'g\';f.g.Y=[\'2h\',\'2g\',\'2f\'];f.g.K="g";f.g.1q="g";f.g.y=1p;2e(u.t){f.J=f.g.X();f.J.U=d;f.J.T=\'J\';f.J.K="g + s r";f.J.y=1P};',62,180,'||||||||||||null|CIE00|CRITERIA_RULES_DEFAULT|comparison_criteria|RGB|00||CIE76|76|DELTA_E_MAX|100|tolerance|40|maximum|94|balance|gray|CRITERIA_GRAYSCALE|window|CRITERIA_FOGRA_MEDIAWEDGE_3|CIE94|luminance|rules|CRITERIA_IDEALLIANCE|CMYK|passed||Nominal||66|deviation||Gamma|RGB_GRAY|name||grey|CMY|50|Median|whitepoint|vs|Measured|id|delta_calc_method|average|75|clone|fields_match|white||||Paper|concat|CRITERIA_RULES_CMYK|warn_deviation|lock_delta_calc_method|failrecommendedtext||Recommended|passrecommendedtext|exceeded|failtext|passtext|LAB_B|LAB_A|LAB_L|fields_compare|range|absolute|95|values|tone|Calibration|CRITERIA_RULES_RGB|strip_name|7_CONTROLSTRIP2009_REF|var|solids|CMYK_K|CMYK_Y|CMYK_M|CMYK_C|DELTA_C_MAX|DELTA_A_B_RANGE|and|combined|DELTA_C_AVG|DELTA_E_STDDEV|Standard|DELTA_E_MAD|DELTA_E_MED|Maximum|DELTA_E_AVG|Average|WHITEPOINT_MvsP|profile|WHITEPOINT_MvsA|target|assumed|CRITERIA_RULES_VERIFY|V3|Wedge|Media|Fogra|FOGRA_MW3|FOGRA|L_SB|IDEALLIANCE|CRITERIA_CMYK|CRITERIA_DEFAULT||CRITERIA_ISO12647_7|45|65|85||true||DELTA_B_MAX|DELTA_A_MAX|DELTA_L_MAX|false|median|CRITERIA_RULES_NEUTRAL|if|RGB_B|RGB_G|RGB_R|Ugra|SWOPCOATED5_ISO12647|SWOPCOATED3_ISO12647|GRACOLCOATED1_ISO12647|CMYK_IDEALLIANCE_CONTROLSTRIP_2009|_MW3_SUBSET|_MW2_SUBSET|2x_MW2_FOGRA|1x_MW2_FOGRA|47|for|CMYK_FOGRA_MEDIAWEDGE_V3|DELTA_H_AVG|60|80|DELTA_H_MAX|2009|Strip|Control|IDEAlliance|Default|GAMMA_STDDEV|standard|GAMMA_MAD|GAMMA_MED|GAMMA_AVG|GAMMA_RANGE|GAMMA_MIN|minimum|GAMMA_MAX|CAL_GRAYLEVELS|grayscale|CAL_BLUELEVELS|blue|CAL_GREENLEVELS|green|CAL_REDLEVELS|red'.split('|'),0,{}))
+/*]]>*/</script>
+	<script type="text/javascript" >/*<![CDATA[*/
+eval(function(p,a,c,k,e,d){e=function(c){return(c<a?"":e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp("\\b"+e(c)+"\\b","g"),k[c])}}return p}('a(1.3.8&&1.3.8<7)A("z y x B w v u. t s r B 7 q p.");c a(1.3.o<5)A("z y x V U w v u. t s r T 5 q p.");c{6 S,R,Q=[],P=[],O=[\'N\',\'M\',\'L\'];K.J=4(){a((1.3.o&&!1.3.I)||(1.3.8&&1.3.8<7.H)){9=e.G(\'F\');d(6 i=0;i<9.E;i++){6 2=e.m(1.l.k(9[i],\'d\'));2.b=2.n;2.n=D;a(1.3.8)9[i].j=4(){6 2=e.m(1.l.k(h,\'d\'));g(4(){2.b()},f)};c 2.j=4(){6 2=h;g(4(){2.b()},f)}}};C()}};',58,58,'|jsapi|form_element|useragent|function||var||opera|labels|if|_onchange|else|for|document|50|setTimeout|this||onclick|attribute|dom|getElementById|onchange|msie|newer|or|to|upgrade|Please|old|too|is|of|version|Your|alert|Opera|analyze|null|length|label|getElementsByTagName|52|mac|onload|window|RGB_B|RGB_G|RGB_R|fields_match|fields_extract_indexes_r|fields_extract_indexes_i|data_in|data_ref|MSIE|Explorer|Internet'.split('|'),0,{}))
+/*]]>*/</script>
+</head>
+<body>
+	<h1><span class="r"></span><span class="g"></span><span class="b"></span>Profile Verification Report 0.0.0.0</h1>
+	<div><noscript><p class="error">Please enable JavaScript</p></noscript></div>
+	<form action="#" id="F_data">
+		<div>
+			<input type="hidden" name="FF_display" value="DELL 2407WFP @ -1920, 0, 1920x1200" />
+			<input type="hidden" name="FF_instrument" value="i1 DisplayPro, ColorMunki Display (LCD (generic))" />
+			<input type="hidden" name="FF_correction_matrix" value="CCFL AC EIZO HP with CORRECTION &amp;lt;CCFLFamily_07Feb11.ccss&amp;gt;" />
+			<input type="hidden" name="FF_profile" value="2407WFP 140cdm² 0.312699x 0.329001y sRGB M-S LabLUT 912 (R199 G206 B249 BR52)" />
+			<input type="hidden" name="FF_profile_whitepoint" value="132.287431 139.400391 151.550278" />
+			<input type="hidden" name="FF_profile_whitepoint_normalized" value="94.897461 100.000000 108.715820" />
+			<input type="hidden" name="FF_whitepoint" value="132.564474 139.744773 152.762003" />
+			<input type="hidden" name="FF_whitepoint_normalized" value="94.861848 100.000000 109.315003" />
+			<input type="hidden" name="FF_blackpoint" value="0.242999 0.223126 0.242663" />
+			<input type="hidden" name="FF_testchart" value="RGB_ramps161.ti1" />
+			<input type="hidden" name="FF_adaption" value="Bradford" />
+			<input type="hidden" name="FF_datetime" value="2013-09-27 23:29:28" />
+			<input type="hidden" name="FF_data_in" value="CTI3   
+
+LUMINANCE_XYZ_CDM2 &quot;132.564474 139.744773 152.762003&quot;
+DESCRIPTOR &quot;Argyll Calibration Target chart information 3&quot;
+KEYWORD &quot;DEVICE_CLASS&quot;
+DEVICE_CLASS &quot;DISPLAY&quot;
+KEYWORD &quot;COLOR_REP&quot;
+COLOR_REP &quot;RGB_LAB&quot;
+
+NUMBER_OF_FIELDS 10
+BEGIN_DATA_FORMAT
+SAMPLE_ID RGB_R RGB_G RGB_B LAB_L LAB_A LAB_B XYZ_X XYZ_Y XYZ_Z
+END_DATA_FORMAT
+
+NUMBER_OF_SETS 161
+BEGIN_DATA
+1 100.000000 100.000000 100.000000 100.000000 0.00000000 0.00000000 94.8618479 100.000000 109.315003
+2 100.000000 100.000000 100.000000 100.000000 0.00000000 0.00000000 94.8618479 100.000000 109.315003
+3 100.000000 100.000000 100.000000 100.000000 0.00000000 0.00000000 94.8618479 100.000000 109.315003
+4 100.000000 100.000000 100.000000 100.000000 0.00000000 0.00000000 94.8618479 100.000000 109.315003
+5 0.00000000 0.00000000 0.00000000 1.44871478 0.92486464 0.02769611 0.17388800 0.15966700 0.17364700
+6 0.00000000 0.00000000 0.00000000 1.44823515 0.92509989 0.02657991 0.17384700 0.15961500 0.17366800
+7 0.00000000 0.00000000 0.00000000 1.44780711 0.92702762 0.02587033 0.17385000 0.15956700 0.17366700
+8 0.00000000 0.00000000 0.00000000 1.44761961 0.92332722 0.02496805 0.17374600 0.15955000 0.17370700
+9 100.000000 0.00000000 0.00000000 56.8579920 82.4116076 81.8294521 45.2972000 23.6364000 1.24236000
+10 98.0392160 0.00000000 0.00000000 55.8967660 81.5026591 80.6616871 43.5885000 22.7114000 1.20144000
+11 96.0784310 0.00000000 0.00000000 54.5074573 79.7068041 78.7870823 41.0395000 21.4227000 1.15590000
+12 94.1176470 0.00000000 0.00000000 53.4576676 78.6053607 77.4830002 39.2609000 20.4793000 1.11503000
+13 92.1568630 0.00000000 0.00000000 52.2491162 77.2331294 75.8980389 37.2464000 19.4291000 1.07479000
+14 90.1960780 0.00000000 0.00000000 51.1194538 75.7878952 74.4122871 35.3790000 18.4820000 1.03774000
+15 88.2352940 0.00000000 0.00000000 49.8786545 74.5350215 72.8627473 33.4955000 17.4747000 0.99293200
+16 86.2745100 0.00000000 0.00000000 48.7778803 73.1108885 71.3706489 31.7962000 16.6151000 0.96044400
+17 84.3137250 0.00000000 0.00000000 47.7666566 72.0455209 70.0709966 30.3509000 15.8486000 0.92654700
+18 82.3529410 0.00000000 0.00000000 46.4887578 70.5870451 68.3766709 28.5595000 14.9151000 0.88711000
+19 80.3921570 0.00000000 0.00000000 45.1579372 69.0509723 66.6095904 26.7661000 13.9828000 0.84631600
+20 78.4313730 0.00000000 0.00000000 44.4266920 68.2073133 65.6108359 25.8136000 13.4875000 0.82593400
+21 76.4705880 0.00000000 0.00000000 43.3665036 66.9514066 64.1686581 24.4656000 12.7906000 0.79595100
+22 74.5098040 0.00000000 0.00000000 42.1172079 65.5579580 62.4760626 22.9574000 12.0001000 0.76051600
+23 72.5490200 0.00000000 0.00000000 41.0647014 64.3222210 61.0179094 21.7229000 11.3604000 0.73285700
+24 70.5882350 0.00000000 0.00000000 39.7237763 62.6844080 59.1332119 20.2025000 10.5793000 0.69949300
+25 68.6274510 0.00000000 0.00000000 38.9449269 61.7791838 58.0459775 19.3619000 10.1422000 0.67978100
+26 66.6666670 0.00000000 0.00000000 37.8657747 60.5713541 56.5270573 18.2450000 9.55644000 0.65354500
+27 64.7058820 0.00000000 0.00000000 36.7029979 59.0911809 54.8552999 17.0583000 8.95206000 0.62742800
+28 62.7450980 0.00000000 0.00000000 35.4101193 57.5985821 53.0124760 15.8268000 8.30975000 0.59775400
+29 60.7843140 0.00000000 0.00000000 34.1127379 56.0929886 51.1547467 14.6508000 7.69689000 0.56868100
+30 58.8235290 0.00000000 0.00000000 32.7540703 54.4225360 49.1666709 13.4689000 7.08868000 0.54118600
+31 56.8627450 0.00000000 0.00000000 31.5111242 53.0277756 47.3727027 12.4644000 6.56048000 0.51466600
+32 54.9019610 0.00000000 0.00000000 30.4369078 51.6938750 45.7822940 11.6197000 6.12629000 0.49441400
+33 52.9411760 0.00000000 0.00000000 29.2188522 50.4347643 44.0101185 10.7426000 5.65655000 0.46979300
+34 50.9803920 0.00000000 0.00000000 27.7228226 48.6635101 41.7877038 9.69938000 5.11418000 0.44251800
+35 49.0196080 0.00000000 0.00000000 26.7161351 47.4629571 40.2785473 9.03585000 4.76950000 0.42520100
+36 47.0588240 0.00000000 0.00000000 25.3282315 45.8058203 38.1919384 8.17148000 4.32021000 0.40185200
+37 45.0980390 0.00000000 0.00000000 23.8875810 44.0885319 35.9999731 7.33485000 3.88467000 0.37959000
+38 43.1372550 0.00000000 0.00000000 22.8229014 42.8217885 34.3791020 6.75492000 3.58232000 0.36328800
+39 41.1764710 0.00000000 0.00000000 21.6562944 41.4113083 32.5837407 6.15350000 3.26959000 0.34684000
+40 39.2156860 0.00000000 0.00000000 20.5503433 40.0572813 30.8723185 5.61593000 2.99050000 0.33196700
+41 37.2549020 0.00000000 0.00000000 19.3323541 38.5860237 28.9778199 5.06283000 2.70200000 0.31637700
+42 35.2941180 0.00000000 0.00000000 17.9753148 36.9021226 26.8477035 4.48753000 2.40325000 0.30042600
+43 33.3333330 0.00000000 0.00000000 16.8043169 35.4535399 25.0014873 4.02795000 2.16388000 0.28732300
+44 31.3725490 0.00000000 0.00000000 15.4779631 33.7818155 22.8960200 3.54470000 1.91267000 0.27355600
+45 29.4117650 0.00000000 0.00000000 14.1463973 32.0913764 20.7716378 3.09944000 1.68087000 0.26057200
+46 27.4509800 0.00000000 0.00000000 12.9192261 30.5078829 18.8021239 2.72233000 1.48462000 0.24949500
+47 25.4901960 0.00000000 0.00000000 12.0235139 29.3276527 17.3561278 2.46614000 1.35151000 0.24204000
+48 23.5294120 0.00000000 0.00000000 10.6388627 27.4674916 15.1069169 2.10108000 1.16187000 0.23155800
+49 21.5686270 0.00000000 0.00000000 9.36457533 25.7316080 13.0315983 1.79781000 1.00388000 0.22236500
+50 19.6078430 0.00000000 0.00000000 8.09623292 23.9406677 10.9487576 1.52429000 0.86164700 0.21448100
+51 17.6470590 0.00000000 0.00000000 6.82464676 21.7124146 8.85924830 1.26587000 0.72733600 0.20670100
+52 15.6862750 0.00000000 0.00000000 5.59678493 18.4926984 6.83991261 1.01663000 0.59767800 0.19931000
+53 13.7254900 0.00000000 0.00000000 4.82791887 15.7181747 5.58023628 0.86012500 0.51649600 0.19433700
+54 11.7647060 0.00000000 0.00000000 3.93941615 11.8705068 4.11608967 0.67998800 0.42267000 0.18919800
+55 9.80392200 0.00000000 0.00000000 3.29814627 9.05883314 3.06348527 0.54983700 0.35495100 0.18519500
+56 7.84313700 0.00000000 0.00000000 2.77322281 6.74693186 2.20184307 0.44305500 0.29952600 0.18191600
+57 5.88235300 0.00000000 0.00000000 2.27409360 4.55848529 1.38101711 0.34175800 0.24681900 0.17890900
+58 3.92156900 0.00000000 0.00000000 1.91398496 2.97756427 0.79124244 0.26861900 0.20879100 0.17656700
+59 1.96078400 0.00000000 0.00000000 1.62106119 1.68381313 0.30936025 0.20894900 0.17786600 0.17481100
+60 0.00000000 100.000000 0.00000000 85.1090344 -81.7174051 82.6840782 31.5754000 66.0991000 9.65324000
+61 0.00000000 98.0392160 0.00000000 83.7456068 -80.7647761 81.5261971 30.2757000 63.4625000 9.28194000
+62 0.00000000 96.0784310 0.00000000 81.9580284 -79.3181357 79.9667635 28.6783000 60.1118000 8.82390000
+63 0.00000000 94.1176470 0.00000000 80.3698529 -77.9943861 78.5339000 27.3175000 57.2356000 8.44496000
+64 0.00000000 92.1568630 0.00000000 78.8963595 -76.9628722 77.2460466 26.0456000 54.6518000 8.08978000
+65 0.00000000 90.1960780 0.00000000 77.0428356 -75.4666119 75.6748677 24.5483000 51.5119000 7.64343000
+66 0.00000000 88.2352940 0.00000000 75.6393077 -74.2657491 74.4497604 23.4694000 49.2157000 7.32699000
+67 0.00000000 86.2745100 0.00000000 73.7672739 -72.9620215 72.8101024 22.0154000 46.2627000 6.91938000
+68 0.00000000 84.3137250 0.00000000 72.4331534 -71.8262646 71.7734143 21.0586000 44.2300000 6.60335000
+69 0.00000000 82.3529410 0.00000000 70.5830369 -70.2914660 70.1400413 19.7725000 41.5120000 6.23165000
+70 0.00000000 80.3921570 0.00000000 68.7849412 -69.0487288 68.5777960 18.5252000 38.9808000 5.87711000
+71 0.00000000 78.4313730 0.00000000 67.2850167 -67.7363974 67.2181228 17.5780000 36.9484000 5.60614000
+72 0.00000000 76.4705880 0.00000000 65.9343764 -66.5348909 66.0813368 16.7558000 35.1794000 5.34894000
+73 0.00000000 74.5098040 0.00000000 64.5800951 -65.3259474 64.9755248 15.9579000 33.4631000 5.09138000
+74 0.00000000 72.5490200 0.00000000 63.1134882 -64.3068473 63.6802011 15.0748000 31.6703000 4.84263000
+75 0.00000000 70.5882350 0.00000000 61.3612986 -63.1106370 62.1893261 14.0592000 29.6137000 4.54430000
+76 0.00000000 68.6274510 0.00000000 59.9804484 -61.8524473 61.0296590 13.3407000 28.0556000 4.31558000
+77 0.00000000 66.6666670 0.00000000 58.1994749 -60.2908809 59.4714720 12.4422000 26.1285000 4.04406000
+78 0.00000000 64.7058820 0.00000000 56.7468636 -58.9392590 58.2137238 11.7510000 24.6233000 3.82891000
+79 0.00000000 62.7450980 0.00000000 55.0443416 -57.7811901 56.8101724 10.9153000 22.9357000 3.57326000
+80 0.00000000 60.7843140 0.00000000 53.6551604 -56.8206472 55.5524716 10.2665000 21.6175000 3.39265000
+81 0.00000000 58.8235290 0.00000000 51.9401780 -55.2521357 54.0693497 9.54872000 20.0594000 3.16738000
+82 0.00000000 56.8627450 0.00000000 50.1969341 -53.6441892 52.5998716 8.85554000 18.5541000 2.94290000
+83 0.00000000 54.9019610 0.00000000 48.4892691 -52.0285106 51.1603418 8.21442000 17.1543000 2.73360000
+84 0.00000000 52.9411760 0.00000000 46.5816769 -50.6985591 49.4724161 7.48585000 15.6777000 2.52239000
+85 0.00000000 50.9803920 0.00000000 44.7361565 -48.9303442 47.8977269 6.87094000 14.3306000 2.32152000
+86 0.00000000 49.0196080 0.00000000 42.8529604 -48.1706659 46.2674744 6.18145000 13.0410000 2.12950000
+87 0.00000000 47.0588240 0.00000000 40.8795682 -45.6967087 44.5688397 5.65618000 11.7706000 1.94074000
+88 0.00000000 45.0980390 0.00000000 39.4855689 -44.7282407 43.3735228 5.23834000 10.9268000 1.81297000
+89 0.00000000 43.1372550 0.00000000 37.5204183 -43.1522951 41.6839194 4.70138000 9.80672000 1.64325000
+90 0.00000000 41.1764710 0.00000000 35.9703255 -41.7357289 40.3295468 4.31753000 8.97893000 1.51944000
+91 0.00000000 39.2156860 0.00000000 34.4015985 -40.4268244 38.9690545 3.94228000 8.19025000 1.39955000
+92 0.00000000 37.2549020 0.00000000 32.2384111 -38.5532247 37.0807274 3.46583000 7.18034000 1.24594000
+93 0.00000000 35.2941180 0.00000000 30.5790540 -37.0548198 35.6071102 3.13129000 6.46449000 1.13815000
+94 0.00000000 33.3333330 0.00000000 28.8489873 -35.5588413 34.0461293 2.80263000 5.77068000 1.03442000
+95 0.00000000 31.3725490 0.00000000 27.0645798 -33.8731122 32.4558829 2.49580000 5.10877000 0.93289000
+96 0.00000000 29.4117650 0.00000000 25.1205048 -32.1522391 30.6547516 2.18269000 4.44770000 0.83238900
+97 0.00000000 27.4509800 0.00000000 23.3302878 -30.4867723 28.8835270 1.92207000 3.89167000 0.74735800
+98 0.00000000 25.4901960 0.00000000 22.1688360 -29.4180651 27.6702262 1.76418000 3.55698000 0.69634300
+99 0.00000000 23.5294120 0.00000000 19.8212873 -27.1805293 25.0862904 1.47477000 2.94015000 0.60170100
+100 0.00000000 21.5686270 0.00000000 18.0407316 -25.4179224 22.9989255 1.27997000 2.52308000 0.53821700
+101 0.00000000 19.6078430 0.00000000 16.2656042 -23.6285648 20.8311046 1.10464000 2.14852000 0.48046800
+102 0.00000000 17.6470590 0.00000000 14.4995293 -21.8191628 18.5746206 0.94776100 1.81463000 0.42950100
+103 0.00000000 15.6862750 0.00000000 12.7722537 -19.9735171 16.2892412 0.81132700 1.52339000 0.38470100
+104 0.00000000 13.7254900 0.00000000 10.5404055 -17.0617426 13.2227611 0.65806400 1.19557000 0.33414700
+105 0.00000000 11.7647060 0.00000000 7.94829617 -12.4500487 9.50343362 0.50821100 0.87828400 0.28566500
+106 0.00000000 9.80392200 0.00000000 6.35373111 -9.12494227 7.17947789 0.42722200 0.70195000 0.25814300
+107 0.00000000 7.84313700 0.00000000 5.07189290 -6.50687287 5.30973758 0.36082500 0.56024100 0.23611200
+108 0.00000000 5.88235300 0.00000000 3.98773970 -4.28616175 3.72451247 0.30483200 0.44038600 0.21775200
+109 0.00000000 3.92156900 0.00000000 2.79880243 -1.85555699 1.99260479 0.24329300 0.30894300 0.19715400
+110 0.00000000 1.96078400 0.00000000 2.02134245 -0.25788171 0.85901997 0.20325100 0.22298600 0.18376300
+111 0.00000000 0.00000000 100.000000 36.5545571 37.9487632 -102.058988 18.1415000 10.5622000 98.4960000
+112 0.00000000 0.00000000 98.0392160 35.7538080 38.1174938 -101.119175 17.4813000 10.0980000 94.9816000
+113 0.00000000 0.00000000 96.0784310 34.6178237 37.8630870 -99.1133956 16.4541000 9.44985000 89.1710000
+114 0.00000000 0.00000000 94.1176470 33.6253620 37.3611099 -97.3714335 15.5520000 8.90826000 84.3066000
+115 0.00000000 0.00000000 92.1568630 32.6951247 37.3740989 -95.8925672 14.8120000 8.42107000 80.1172000
+116 0.00000000 0.00000000 90.1960780 31.8584946 36.5354326 -94.2499725 14.0363000 7.99534000 76.0643000
+117 0.00000000 0.00000000 88.2352940 31.0695492 36.3651952 -92.9529734 13.4235000 7.60988000 72.6860000
+118 0.00000000 0.00000000 86.2745100 30.2886673 35.7675195 -91.4480950 12.7693000 7.23809000 69.1732000
+119 0.00000000 0.00000000 84.3137250 29.5032929 35.6877480 -90.1970922 12.2097000 6.87961000 66.0651000
+120 0.00000000 0.00000000 82.3529410 28.5051232 34.8378227 -88.1561169 11.4127000 6.43584000 61.7419000
+121 0.00000000 0.00000000 80.3921570 27.7127993 35.3050736 -87.2018449 10.9658000 6.10523000 59.1735000
+122 0.00000000 0.00000000 78.4313730 26.6990001 33.9172204 -84.7614714 10.1396000 5.68510000 54.7160000
+123 0.00000000 0.00000000 76.4705880 25.8750684 33.9278691 -83.5290444 9.65062000 5.36669000 52.0131000
+124 0.00000000 0.00000000 74.5098040 25.0812530 33.0011718 -81.7335168 9.07461000 5.06481000 48.9062000
+125 0.00000000 0.00000000 72.5490200 24.3878204 32.7075232 -80.5018279 8.65427000 4.81408000 46.6092000
+126 0.00000000 0.00000000 70.5882350 23.6107301 32.6538389 -79.1823435 8.22662000 4.54319000 44.1768000
+127 0.00000000 0.00000000 68.6274510 22.8081855 32.0884484 -77.6523429 7.74818000 4.27337000 41.6099000
+128 0.00000000 0.00000000 66.6666670 21.8350779 31.0797933 -75.4738081 7.15367000 3.95738000 38.3678000
+129 0.00000000 0.00000000 64.7058820 21.0579044 30.6003011 -73.9478890 6.73545000 3.71840000 36.0710000
+130 0.00000000 0.00000000 62.7450980 20.1174740 29.8248622 -72.0378307 6.23445000 3.44203000 33.3690000
+131 0.00000000 0.00000000 60.7843140 19.4690229 29.2055798 -70.5691211 5.89243000 3.25811000 31.4778000
+132 0.00000000 0.00000000 58.8235290 18.7002867 28.6456521 -69.0047942 5.52151000 3.05028000 29.4513000
+133 0.00000000 0.00000000 56.8627450 17.9145202 28.2835525 -67.5396945 5.17715000 2.84815000 27.5597000
+134 0.00000000 0.00000000 54.9019610 16.9637038 27.7435462 -65.6870973 4.77111000 2.61516000 25.3317000
+135 0.00000000 0.00000000 52.9411760 16.0306321 26.9891213 -63.6647756 4.37457000 2.39772000 23.1456000
+136 0.00000000 0.00000000 50.9803920 15.0154304 26.1606509 -61.5166700 3.96974000 2.17569000 20.9426000
+137 0.00000000 0.00000000 49.0196080 14.1038991 25.4942247 -59.5631675 3.63175000 1.98807000 19.0751000
+138 0.00000000 0.00000000 47.0588240 13.3101701 24.9073276 -57.8481296 3.35290000 1.83366000 17.5355000
+139 0.00000000 0.00000000 45.0980390 12.5347598 23.9923783 -56.0092298 3.07471000 1.69005000 16.0386000
+140 0.00000000 0.00000000 43.1372550 11.7263131 23.3257341 -54.2038734 2.81675000 1.54890000 14.6195000
+141 0.00000000 0.00000000 41.1764710 10.7254425 22.3809966 -51.9040851 2.51170000 1.38508000 12.9561000
+142 0.00000000 0.00000000 39.2156860 9.89013935 21.5250210 -49.9122131 2.27073000 1.25721000 11.6417000
+143 0.00000000 0.00000000 37.2549020 9.14936799 20.6835112 -48.0447044 2.06567000 1.15016000 10.5182000
+144 0.00000000 0.00000000 35.2941180 8.33687865 19.9261280 -46.0880522 1.86251000 1.04025000 9.40115000
+145 0.00000000 0.00000000 33.3333330 7.52126640 18.9534706 -43.9717366 1.66351000 0.93563700 8.31724000
+146 0.00000000 0.00000000 31.3725490 6.79459514 17.7852178 -41.7993219 1.48599000 0.84282200 7.34640000
+147 0.00000000 0.00000000 29.4117650 6.24145814 16.7179078 -39.9715426 1.35266000 0.77226800 6.61607000
+148 0.00000000 0.00000000 27.4509800 5.71675597 15.4631117 -38.0423070 1.22529000 0.70537200 5.92345000
+149 0.00000000 0.00000000 25.4901960 4.97659885 13.3018313 -34.8823540 1.04602000 0.61086600 4.93914000
+150 0.00000000 0.00000000 23.5294120 4.51896001 11.7173835 -32.6061162 0.93365800 0.55241700 4.32692000
+151 0.00000000 0.00000000 21.5686270 4.03155584 10.0459091 -29.8460751 0.81439300 0.49015700 3.67507000
+152 0.00000000 0.00000000 19.6078430 3.56339612 8.46008694 -26.7704706 0.70031700 0.43034600 3.04929000
+153 0.00000000 0.00000000 17.6470590 3.15223351 6.98065352 -23.5488090 0.59773800 0.37776600 2.49254000
+154 0.00000000 0.00000000 15.6862750 2.77612854 5.68920152 -20.0869622 0.50557100 0.32969200 1.98753000
+155 0.00000000 0.00000000 13.7254900 2.49947359 4.70979134 -17.0325252 0.43690100 0.29429200 1.61235000
+156 0.00000000 0.00000000 11.7647060 2.21154110 3.69235859 -13.2216843 0.36551400 0.25746000 1.22265000
+157 0.00000000 0.00000000 9.80392200 2.04870658 3.12032542 -10.6370343 0.32519500 0.23661900 1.00171000
+158 0.00000000 0.00000000 7.84313700 1.87992427 2.52096985 -7.69268458 0.28324400 0.21501900 0.77254300
+159 0.00000000 0.00000000 5.88235300 1.70566412 1.89362293 -4.62089889 0.23963300 0.19269200 0.53393100
+160 0.00000000 0.00000000 3.92156900 1.59945701 1.46653974 -2.68790088 0.21178900 0.17904800 0.38418600
+161 0.00000000 0.00000000 1.96078400 1.50436975 1.15537975 -1.04686600 0.18884800 0.16688200 0.25647900
+END_DATA" />
+			<input type="hidden" name="FF_data_ref" value="CTI3   
+
+DESCRIPTOR &quot;Argyll Calibration Target chart information 3&quot;
+KEYWORD &quot;DEVICE_CLASS&quot;
+DEVICE_CLASS &quot;DISPLAY&quot;
+KEYWORD &quot;COLOR_REP&quot;
+COLOR_REP &quot;RGB_LAB&quot;
+
+NUMBER_OF_FIELDS 7
+BEGIN_DATA_FORMAT
+SAMPLE_ID RGB_R RGB_G RGB_B LAB_L LAB_A LAB_B
+END_DATA_FORMAT
+
+NUMBER_OF_SETS 161
+BEGIN_DATA
+1 100.000000 100.000000 100.000000 100.000000 -0.00134400 -0.00158800
+2 100.000000 100.000000 100.000000 100.000000 -0.00134400 -0.00158800
+3 100.000000 100.000000 100.000000 100.000000 -0.00134400 -0.00158800
+4 100.000000 100.000000 100.000000 100.000000 -0.00134400 -0.00158800
+5 0.00000000 0.00000000 0.00000000 1.44356200 0.91082200 0.03086700
+6 0.00000000 0.00000000 0.00000000 1.44356200 0.91082200 0.03086700
+7 0.00000000 0.00000000 0.00000000 1.44356200 0.91082200 0.03086700
+8 0.00000000 0.00000000 0.00000000 1.44356200 0.91082200 0.03086700
+9 100.000000 0.00000000 0.00000000 56.8724620 82.8011060 81.9226730
+10 98.0392160 0.00000000 0.00000000 55.7302950 81.5695290 80.5605520
+11 96.0784310 0.00000000 0.00000000 54.5805680 80.3083950 79.1551750
+12 94.1176470 0.00000000 0.00000000 53.4319730 79.0073510 77.7046950
+13 92.1568630 0.00000000 0.00000000 52.2877390 77.6759370 76.2138170
+14 90.1960780 0.00000000 0.00000000 51.1690110 76.3090720 74.6850480
+15 88.2352940 0.00000000 0.00000000 50.0536190 74.9308120 73.1398160
+16 86.2745100 0.00000000 0.00000000 48.9324340 73.5387280 71.5816370
+17 84.3137250 0.00000000 0.00000000 47.7767510 72.1440400 70.0056050
+18 82.3529410 0.00000000 0.00000000 46.6025300 70.7569850 68.4240610
+19 80.3921570 0.00000000 0.00000000 45.4496760 69.3957430 66.8782790
+20 78.4313730 0.00000000 0.00000000 44.2961030 68.0555430 65.3518260
+21 76.4705880 0.00000000 0.00000000 43.1794040 66.7539050 63.8710370
+22 74.5098040 0.00000000 0.00000000 42.0735410 65.4832660 62.3919430
+23 72.5490200 0.00000000 0.00000000 40.9794640 64.2434020 60.9041770
+24 70.5882350 0.00000000 0.00000000 39.8777780 63.0211610 59.4050340
+25 68.6274510 0.00000000 0.00000000 38.7519570 61.7816440 57.8728880
+26 66.6666670 0.00000000 0.00000000 37.6286160 60.5210930 56.3263360
+27 64.7058820 0.00000000 0.00000000 36.4954760 59.2285650 54.7435290
+28 62.7450980 0.00000000 0.00000000 35.3597980 57.8963820 53.1211840
+29 60.7843140 0.00000000 0.00000000 34.2090990 56.5215160 51.4446400
+30 58.8235290 0.00000000 0.00000000 33.0474980 55.1163170 49.7171570
+31 56.8627450 0.00000000 0.00000000 31.8738720 53.6944680 47.9591220
+32 54.9019610 0.00000000 0.00000000 30.6550850 52.2910660 46.1590350
+33 52.9411760 0.00000000 0.00000000 29.4310580 50.8770580 44.3489240
+34 50.9803920 0.00000000 0.00000000 28.2030260 49.4479340 42.5169550
+35 49.0196080 0.00000000 0.00000000 26.9777570 48.0133360 40.6920510
+36 47.0588240 0.00000000 0.00000000 25.7625180 46.5768290 38.8772840
+37 45.0980390 0.00000000 0.00000000 24.5448110 45.1365130 37.0622590
+38 43.1372550 0.00000000 0.00000000 23.3446080 43.6963440 35.2554990
+39 41.1764710 0.00000000 0.00000000 22.1263400 42.2675360 33.4295300
+40 39.2156860 0.00000000 0.00000000 20.9288300 40.8623830 31.6209180
+41 37.2549020 0.00000000 0.00000000 19.7244380 39.4030460 29.7558410
+42 35.2941180 0.00000000 0.00000000 18.5488200 37.9479670 27.9113410
+43 33.3333330 0.00000000 0.00000000 17.4035300 36.4814810 26.0773760
+44 31.3725490 0.00000000 0.00000000 16.2506160 34.9626740 24.2121280
+45 29.4117650 0.00000000 0.00000000 15.1022740 33.4090800 22.3261310
+46 27.4509800 0.00000000 0.00000000 13.8058690 31.6770260 20.2596860
+47 25.4901960 0.00000000 0.00000000 12.4723020 29.8558920 18.1334340
+48 23.5294120 0.00000000 0.00000000 11.1334220 27.9594580 15.9743710
+49 21.5686270 0.00000000 0.00000000 9.80336600 25.9425490 13.7913120
+50 19.6078430 0.00000000 0.00000000 8.52819900 23.8288660 11.6487850
+51 17.6470590 0.00000000 0.00000000 7.31200500 21.6439270 9.59057600
+52 15.6862750 0.00000000 0.00000000 6.15433600 19.3715680 7.64709700
+53 13.7254900 0.00000000 0.00000000 5.04401500 17.0100360 6.05013700
+54 11.7647060 0.00000000 0.00000000 4.01699500 14.6207310 4.75761400
+55 9.80392200 0.00000000 0.00000000 3.11721100 12.2182300 3.69420700
+56 7.84313700 0.00000000 0.00000000 2.37710200 9.83998400 2.80365500
+57 5.88235300 0.00000000 0.00000000 1.92890800 7.49860600 2.04790200
+58 3.92156900 0.00000000 0.00000000 1.66291500 5.22531500 1.34592000
+59 1.96078400 0.00000000 0.00000000 1.51894100 3.02880400 0.68172100
+60 0.00000000 100.000000 0.00000000 85.1492160 -81.9953360 82.8681730
+61 0.00000000 98.0392160 0.00000000 83.5948590 -80.6389860 81.4731460
+62 0.00000000 96.0784310 0.00000000 82.0061900 -79.2985340 80.0677690
+63 0.00000000 94.1176470 0.00000000 80.4002720 -77.9737460 78.6578580
+64 0.00000000 92.1568630 0.00000000 78.7781120 -76.6485430 77.2321170
+65 0.00000000 90.1960780 0.00000000 77.1467580 -75.3514250 75.8130570
+66 0.00000000 88.2352940 0.00000000 75.5140390 -74.0674400 74.4155630
+67 0.00000000 86.2745100 0.00000000 73.8807590 -72.8152620 73.0326880
+68 0.00000000 84.3137250 0.00000000 72.2298830 -71.5480120 71.6637470
+69 0.00000000 82.3529410 0.00000000 70.6279910 -70.3157820 70.3109360
+70 0.00000000 80.3921570 0.00000000 69.0565720 -69.0922650 68.9897400
+71 0.00000000 78.4313730 0.00000000 67.5478840 -67.9172470 67.6957930
+72 0.00000000 76.4705880 0.00000000 66.0331160 -66.7180520 66.3948910
+73 0.00000000 74.5098040 0.00000000 64.5556680 -65.5581790 65.1138530
+74 0.00000000 72.5490200 0.00000000 63.0767430 -64.4114260 63.8652030
+75 0.00000000 70.5882350 0.00000000 61.6306420 -63.2932230 62.6210680
+76 0.00000000 68.6274510 0.00000000 60.1400380 -62.1446090 61.3848500
+77 0.00000000 66.6666670 0.00000000 58.6452950 -60.9684960 60.1257630
+78 0.00000000 64.7058820 0.00000000 57.1313970 -59.7541270 58.8442260
+79 0.00000000 62.7450980 0.00000000 55.5866530 -58.4847830 57.5172110
+80 0.00000000 60.7843140 0.00000000 54.0092920 -57.1605820 56.1435280
+81 0.00000000 58.8235290 0.00000000 52.3732470 -55.7724690 54.7179730
+82 0.00000000 56.8627450 0.00000000 50.6990120 -54.3463760 53.2559080
+83 0.00000000 54.9019610 0.00000000 48.9622820 -52.9086950 51.7796300
+84 0.00000000 52.9411760 0.00000000 47.1636900 -51.4354780 50.2710020
+85 0.00000000 50.9803920 0.00000000 45.3282600 -49.9395260 48.7279920
+86 0.00000000 49.0196080 0.00000000 43.4519600 -48.4032790 47.1395240
+87 0.00000000 47.0588240 0.00000000 41.5620010 -46.8314410 45.5035200
+88 0.00000000 45.0980390 0.00000000 39.6715450 -45.2407670 43.8527780
+89 0.00000000 43.1372550 0.00000000 37.8187220 -43.6598280 42.2196690
+90 0.00000000 41.1764710 0.00000000 36.0708920 -42.2091050 40.7119620
+91 0.00000000 39.2156860 0.00000000 34.3711200 -40.7834590 39.2337490
+92 0.00000000 37.2549020 0.00000000 32.7103910 -39.3631000 37.7730200
+93 0.00000000 35.2941180 0.00000000 31.0347980 -37.8667890 36.2345600
+94 0.00000000 33.3333330 0.00000000 29.3418560 -36.3240050 34.6488890
+95 0.00000000 31.3725490 0.00000000 27.6169520 -34.7239360 32.9948070
+96 0.00000000 29.4117650 0.00000000 25.7789620 -33.0138530 31.1608760
+97 0.00000000 27.4509800 0.00000000 23.8420090 -31.2799900 29.1481470
+98 0.00000000 25.4901960 0.00000000 21.8942550 -29.5224810 27.0448700
+99 0.00000000 23.5294120 0.00000000 19.9233960 -27.6863930 24.8222690
+100 0.00000000 21.5686270 0.00000000 17.9520210 -25.7432700 22.5186050
+101 0.00000000 19.6078430 0.00000000 16.0064950 -23.7359740 20.1932920
+102 0.00000000 17.6470590 0.00000000 14.1026620 -21.6047540 17.8424550
+103 0.00000000 15.6862750 0.00000000 12.2495270 -19.3841830 15.5508190
+104 0.00000000 13.7254900 0.00000000 10.4567320 -17.1213140 13.3261210
+105 0.00000000 11.7647060 0.00000000 8.68771200 -14.7780550 11.2565500
+106 0.00000000 9.80392200 0.00000000 7.05069700 -12.3779030 9.25855000
+107 0.00000000 7.84313700 0.00000000 5.52774600 -9.92439500 7.32616300
+108 0.00000000 5.88235300 0.00000000 4.27067800 -7.34559700 5.46142000
+109 0.00000000 3.92156900 0.00000000 3.18413500 -4.68914600 3.62643300
+110 0.00000000 1.96078400 0.00000000 2.26037800 -1.93249100 1.82146100
+111 0.00000000 0.00000000 100.000000 36.4703850 38.4726860 -102.561262
+112 0.00000000 0.00000000 98.0392160 35.5061850 38.1941290 -101.099073
+113 0.00000000 0.00000000 96.0784310 34.5610030 37.8897440 -99.6100130
+114 0.00000000 0.00000000 94.1176470 33.6545030 37.5470710 -98.0736900
+115 0.00000000 0.00000000 92.1568630 32.7812310 37.1803190 -96.5222590
+116 0.00000000 0.00000000 90.1960780 31.9473780 36.7910050 -94.9511410
+117 0.00000000 0.00000000 88.2352940 31.1327350 36.3901970 -93.3840580
+118 0.00000000 0.00000000 86.2745100 30.3250640 35.9873440 -91.8489940
+119 0.00000000 0.00000000 84.3137250 29.4815450 35.5875530 -90.3014720
+120 0.00000000 0.00000000 82.3529410 28.6359780 35.1962110 -88.8059250
+121 0.00000000 0.00000000 80.3921570 27.7823790 34.7852600 -87.2568870
+122 0.00000000 0.00000000 78.4313730 26.9239220 34.3699690 -85.7434600
+123 0.00000000 0.00000000 76.4705880 26.0944180 33.9405710 -84.2107850
+124 0.00000000 0.00000000 74.5098040 25.2618340 33.5061790 -82.6976880
+125 0.00000000 0.00000000 72.5490200 24.4505720 33.0505500 -81.1632770
+126 0.00000000 0.00000000 70.5882350 23.6427200 32.5856630 -79.6447320
+127 0.00000000 0.00000000 68.6274510 22.8197070 32.0854980 -78.1039850
+128 0.00000000 0.00000000 66.6666670 22.0076820 31.5704800 -76.5588190
+129 0.00000000 0.00000000 64.7058820 21.1968810 31.0183720 -74.9432590
+130 0.00000000 0.00000000 62.7450980 20.3908680 30.4394970 -73.2885600
+131 0.00000000 0.00000000 60.7843140 19.5929710 29.8348320 -71.5869590
+132 0.00000000 0.00000000 58.8235290 18.7765400 29.1964530 -69.8363080
+133 0.00000000 0.00000000 56.8627450 17.9484260 28.5388140 -68.0646360
+134 0.00000000 0.00000000 54.9019610 17.0329530 27.8481330 -66.2464620
+135 0.00000000 0.00000000 52.9411760 16.1081170 27.1414520 -64.4188960
+136 0.00000000 0.00000000 50.9803920 15.1954710 26.4137360 -62.5342940
+137 0.00000000 0.00000000 49.0196080 14.3107650 25.6742660 -60.5975700
+138 0.00000000 0.00000000 47.0588240 13.4496350 24.9197610 -58.6114290
+139 0.00000000 0.00000000 45.0980390 12.6133120 24.1523070 -56.6049170
+140 0.00000000 0.00000000 43.1372550 11.7805480 23.3882100 -54.6447230
+141 0.00000000 0.00000000 41.1764710 10.9437130 22.6340500 -52.7836730
+142 0.00000000 0.00000000 39.2156860 10.0970760 21.8570940 -50.9760510
+143 0.00000000 0.00000000 37.2549020 9.27266100 21.0570840 -49.1439050
+144 0.00000000 0.00000000 35.2941180 8.49043100 20.2205350 -47.2785460
+145 0.00000000 0.00000000 33.3333330 7.78582800 19.3100470 -45.3145990
+146 0.00000000 0.00000000 31.3725490 7.11658300 18.3088960 -43.2121440
+147 0.00000000 0.00000000 29.4117650 6.47614500 17.1812690 -40.9350020
+148 0.00000000 0.00000000 27.4509800 5.84686600 15.7604040 -38.4264860
+149 0.00000000 0.00000000 25.4901960 5.24239600 14.2052550 -35.7680540
+150 0.00000000 0.00000000 23.5294120 4.66452000 12.5394430 -32.9684370
+151 0.00000000 0.00000000 21.5686270 4.15778900 10.8116440 -29.9891610
+152 0.00000000 0.00000000 19.6078430 3.70285300 9.11901000 -26.9099610
+153 0.00000000 0.00000000 17.6470590 3.28964700 7.49380900 -23.7804570
+154 0.00000000 0.00000000 15.6862750 2.91479200 6.04893600 -20.6656800
+155 0.00000000 0.00000000 13.7254900 2.50823200 4.88288400 -17.7480040
+156 0.00000000 0.00000000 11.7647060 2.09831000 3.90951900 -14.9687520
+157 0.00000000 0.00000000 9.80392200 1.73847700 3.20135100 -12.3402760
+158 0.00000000 0.00000000 7.84313700 1.48374800 2.60073800 -9.77528400
+159 0.00000000 0.00000000 5.88235300 1.30677100 2.08418000 -7.26544000
+160 0.00000000 0.00000000 3.92156900 1.31319300 1.66615600 -4.79388200
+161 0.00000000 0.00000000 1.96078400 1.35735900 1.27233000 -2.36255900
+END_DATA" />
+			<input type="hidden" name="FF_report_version" value="0.0.0.0" />
+		</div>
+	</form>
+	<form action="#" id="F_out" onsubmit="return false">
+		<h2 id="reporttitle" class="legend">2407WFP 140cdm² 0.312699x 0.329001y sRGB M-S LabLUT 912 (R199 G206 B249 BR52) — 2013-09-27 23:29:28</h2>
+		<div id="report" class="fieldset process">
+			<p class="functions">
+				<button onclick="plaintext('ref')">View raw reference data</button>&#160;
+				<button onclick="plaintext('in')">View raw measurement data</button>
+			</p>
+			<p class="options">
+				Evaluation criteria:
+				<select name="FF_criteria" id="FF_criteria" onchange="compare()">
+				</select>
+			</p>
+			<p class="options">
+				<label for="FF_gray_balance_cal_only" class="disabled">Evaluate gray balance through calibration only: <input type="checkbox" name="FF_gray_balance_cal_only" id="FF_gray_balance_cal_only" disabled="disabled" onchange="compare(false)" /><br /></label>
+				<label for="FF_planckian" class="disabled">Use blackbody locus as assumed target whitepoint: <input type="checkbox" name="FF_planckian" id="FF_planckian"  disabled="disabled" onchange="compare(false)" /><br /></label>
+				<label for="FF_verbosestats" class="disabled">Show additional statistics: <input type="checkbox" name="FF_verbosestats" id="FF_verbosestats" disabled="disabled" onchange="togglestats()" /></label>
+			</p>
+			<p class="options">
+				<label for="FF_mode" class="disabled">Show values as: <select name="FF_mode" id="FF_mode" disabled="disabled" onchange="compare(false)">
+					<option value="Lab">L*a*b*</option>
+					<option value="XYZ">XYZ</option>
+					<option value="xyY">xyY</option>
+				</select><br /></label>
+				<label for="FF_absolute" class="disabled">Use absolute values: <input type="checkbox" name="FF_absolute" id="FF_absolute" disabled="disabled" onchange="compare(false)" /><br /></label>
+				<label for="FF_delta_calc_method" class="disabled">Delta E formula for results:
+				<select name="FF_delta_calc_method" id="FF_delta_calc_method" disabled="disabled" onchange="compare(false)">
+					<option value="CIE76">CIE 1976</option>
+					<option value="CIE94">CIE 1994</option>
+					<option value="CIE00">CIE 2000</option>
+				</select></label>
+			</p>
+			<div id="result"></div>
+		</div>
+	</form>
+</body>
+</html>
