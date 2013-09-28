@@ -1,10 +1,12 @@
 Factory settings
 
-Service menu:
 
+Service menu:
+ACC: Off
+Soft Dither: Off
 R: 199
-G: 206
-B: 249
+G: 205
+B: 247
 
 User Menu:
 
